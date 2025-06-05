@@ -6,6 +6,7 @@ import time
 import os
 import copy
 
+# Início
 SAVE_FILE = "sudoku_save.json"
 
 class Sudoku:
