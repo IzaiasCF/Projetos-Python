@@ -103,8 +103,10 @@ class Sudoku:
         for r in range(9):
             for c in range(9):
                 entry = self.entries[(r, c)]
-                if r == row or c == col or (r//3, c//3) == (row//3, col//3):
+                if r == row or c == col:
                     entry.config(bg="#ccf2ff" if entry['state'] != 'disabled' else "#e0e0e0")
+                elif (r//3 == row//3) and (c//3 == col//3):
+                    entry.config(bg="#d0ffd0" if entry['state'] != 'disabled' else "#e0e0e0")
                 else:
                     entry.config(bg="white" if entry['state'] != 'disabled' else "#e0e0e0")
 
