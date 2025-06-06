@@ -1,3 +1,4 @@
+
 import tkinter as tk
 from tkinter import messagebox
 import random
@@ -6,14 +7,13 @@ import time
 import os
 import copy
 
-# Início
 SAVE_FILE = "sudoku_save.json"
 
 class Sudoku:
     def __init__(self):
         self.window = tk.Tk()
-        self.window.title("Sudoku Completo")
-        self.window.geometry("500x700")
+        self.window.title("Sudoku Avançado")
+        self.window.geometry("700x800")
         self.difficulty = "fácil"
         self.entries = {}
         self.undos = []
@@ -63,6 +63,9 @@ class Sudoku:
         self.board_frame = tk.Frame(self.window)
         self.board_frame.pack()
 
+        self.stats_label = tk.Label(self.window, text="", justify='left', font=("Arial", 10))
+        self.stats_label.pack(pady=10)
+
     def change_difficulty(self, level):
         self.difficulty = level
         self.start_game()
@@ -74,19 +77,17 @@ class Sudoku:
         for widget in self.board_frame.winfo_children():
             widget.destroy()
 
-        if self.save_enabled.get() and os.path.exists(SAVE_FILE):
-            self.load_game()
-        else:
-            self.board, self.solution = self.generate_unique_board()
+        self.board, self.solution = self.generate_unique_board()
 
         for row in range(9):
             for col in range(9):
-                entry = tk.Entry(self.board_frame, width=2, font=("Arial", 18), justify="center")
+                entry = tk.Entry(self.board_frame, width=2, font=("Arial", 18), justify="center", bg="white")
                 value = self.board[row][col]
                 if value != 0:
                     entry.insert(0, str(value))
-                    entry.config(state='disabled', disabledforeground="black")
+                    entry.config(state='disabled', disabledforeground="black", bg="#e0e0e0")
                 else:
+                    entry.bind("<FocusIn>", lambda e, r=row, c=col: self.highlight_related(r, c))
                     entry.bind("<FocusOut>", lambda e, r=row, c=col: self.validate_input(r, c))
                 entry.grid(row=row, column=col, padx=2, pady=2)
                 self.entries[(row, col)] = entry
@@ -97,6 +98,15 @@ class Sudoku:
         if self.timer_running:
             self.window.after_cancel(self.timer_running)
         self.update_timer()
+
+    def highlight_related(self, row, col):
+        for r in range(9):
+            for c in range(9):
+                entry = self.entries[(r, c)]
+                if r == row or c == col or (r//3, c//3) == (row//3, col//3):
+                    entry.config(bg="#ccf2ff" if entry['state'] != 'disabled' else "#e0e0e0")
+                else:
+                    entry.config(bg="white" if entry['state'] != 'disabled' else "#e0e0e0")
 
     def validate_input(self, row, col):
         entry = self.entries[(row, col)]
@@ -115,6 +125,7 @@ class Sudoku:
             messagebox.showwarning("Valor inválido", "Digite um número entre 1 e 9.")
             entry.delete(0, tk.END)
             self.score -= 5
+        self.update_stats()
 
     def undo(self):
         if self.undos:
@@ -126,6 +137,7 @@ class Sudoku:
                 self.entries[(row, col)].insert(0, str(previous_value))
             self.redos.append(((row, col), current_value))
             self.score -= 2
+            self.update_stats()
 
     def redo(self):
         if self.redos:
@@ -136,6 +148,7 @@ class Sudoku:
             if value != 0:
                 self.entries[(row, col)].insert(0, str(value))
             self.score -= 2
+            self.update_stats()
 
     def check_solution(self):
         for row in range(9):
@@ -148,6 +161,28 @@ class Sudoku:
         messagebox.showinfo("Parabéns!", f"Você venceu! Pontuação final: {self.score}")
         if self.save_enabled.get():
             os.remove(SAVE_FILE)
+
+    def update_stats(self):
+        row_counts = [set() for _ in range(9)]
+        col_counts = [set() for _ in range(9)]
+        box_counts = [set() for _ in range(9)]
+        for r in range(9):
+            for c in range(9):
+                val = self.entries[(r, c)].get()
+                if val.isdigit():
+                    val = int(val)
+                    row_counts[r].add(val)
+                    col_counts[c].add(val)
+                    box_index = (r // 3) * 3 + (c // 3)
+                    box_counts[box_index].add(val)
+        stats = []
+        for i in range(9):
+            stats.append(f"Linha {i+1}: {sorted(row_counts[i])}")
+        for i in range(9):
+            stats.append(f"Coluna {i+1}: {sorted(col_counts[i])}")
+        for i in range(9):
+            stats.append(f"Bloco {i+1}: {sorted(box_counts[i])}")
+        self.stats_label.config(text="\n".join(stats))
 
     def update_timer(self):
         if self.show_timer.get():
@@ -221,15 +256,6 @@ class Sudoku:
         }
         with open(SAVE_FILE, "w") as f:
             json.dump(data, f)
-
-    def load_game(self):
-        with open(SAVE_FILE, "r") as f:
-            data = json.load(f)
-            self.board = data["board"]
-            self.difficulty = data["difficulty"]
-            self.elapsed_time = data["time"]
-            self.score = data["score"]
-            self.solution = self.generate_unique_board()[1]
 
 if __name__ == "__main__":
     Sudoku().window.mainloop()
