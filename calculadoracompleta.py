@@ -4,7 +4,7 @@ from tkinter import messagebox
 class Calculadora:
     def __init__(self, root):
         self.root = root
-        self.root.title("Calculadora Completa")
+        self.root.title("Calculadora")
         self.root.configure(bg="#222222")
         self.root.geometry("400x600")
         self.equation = ""
