@@ -4,9 +4,9 @@ from tkinter import messagebox
 class Calculadora:
     def __init__(self, root):
         self.root = root
-        self.root.title("Calculadora")
+        self.root.title("Calculadora Completa")
         self.root.configure(bg="#222222")
-        self.root.geometry("400x550")
+        self.root.geometry("400x600")
         self.equation = ""
         self.history = []
 
@@ -32,31 +32,35 @@ class Calculadora:
             ('4', '#444444'), ('5', '#444444'), ('6', '#444444'), ('*', '#FF9500'),
             ('1', '#444444'), ('2', '#444444'), ('3', '#444444'), ('-', '#FF9500'),
             ('0', '#444444'), ('.', '#444444'), ('=', '#00C853'), ('+', '#FF9500'),
-            ('C', '#D50000'), ('←', '#FF5722'), ('Hist', '#2962FF')
+            ('C', '#D50000'), ('←', '#FF5722'), ('%', '#FF9500'), ('Hist', '#2962FF')
         ]
 
-        rows = 5
+        rows = 6
         cols = 4
 
-        # Posicionamento dos botões
+        # Posição dos botões na grade
         positions = [
             (0, 0), (0, 1), (0, 2), (0, 3),
             (1, 0), (1, 1), (1, 2), (1, 3),
             (2, 0), (2, 1), (2, 2), (2, 3),
             (3, 0), (3, 1), (3, 2), (3, 3),
-            (4, 0), (4, 1), (4, 2, 1, 2)  # 'Hist' vai ocupar 2 colunas
+            (4, 0), (4, 1), (4, 2), (4, 3)
         ]
 
         for index, (text, color) in enumerate(buttons):
             action = lambda x=text: self.on_button_click(x)
-            grid_options = {"row": positions[index][0], "column": positions[index][1], "sticky": "nsew", "padx": 2, "pady": 2}
-            if len(positions[index]) == 4:
-                grid_options["columnspan"] = positions[index][3]
+            grid_options = {
+                "row": positions[index][0],
+                "column": positions[index][1],
+                "sticky": "nsew",
+                "padx": 2,
+                "pady": 2
+            }
             button = tk.Button(buttons_frame, text=text, bg=color, fg="white", font=('Arial', 18),
                                relief=tk.FLAT, command=action)
             button.grid(**grid_options)
 
-        # Configurar expansão proporcional
+        # Ajustar expansão
         for i in range(rows):
             buttons_frame.rowconfigure(i, weight=1)
         for j in range(cols):
@@ -81,6 +85,22 @@ class Calculadora:
                 self.display_text.set("")
         elif char == 'Hist':
             self.show_history()
+        elif char == '%':
+            try:
+                # Calcula porcentagem do último número da equação
+                if self.equation:
+                    last_number = ''
+                    for c in reversed(self.equation):
+                        if c.isdigit() or c == '.':
+                            last_number = c + last_number
+                        else:
+                            break
+                    if last_number:
+                        percent = str(float(last_number) / 100)
+                        self.equation = self.equation[:-len(last_number)] + percent
+                        self.display_text.set(self.equation)
+            except Exception:
+                messagebox.showerror("Erro", "Erro ao calcular porcentagem")
         else:
             self.equation += str(char)
             self.display_text.set(self.equation)
