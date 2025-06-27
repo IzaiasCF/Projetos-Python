@@ -1,2 +1,2 @@
 print('Olá, pessoal!')
-print('mMeu primeiro programa em Python.')
+print('Meu primeiro programa em Python.')
