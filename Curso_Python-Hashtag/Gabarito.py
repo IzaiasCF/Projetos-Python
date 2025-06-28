@@ -28,8 +28,8 @@ mail = outlook.CreateItem(0)
 mail.To = 'pythonimpressionador@gmail.com'
 mail.Subject = 'Relatório de Vendas por Loja'
 mail.HTMLBody = f'''
-<p>Prezados,</p>
 
+<p>Prezados,</p>
 <p>Segue o Relatório de Vendas por cada Loja</p>
 
 <p>Faturamento:</p>
