@@ -38,6 +38,9 @@ nome = "izaias correa filho"
 print(nome.capitalize())  # torna somente a primeira letra da primeira palavra em maiúscula: Izaias correa filho
 print(nome.title())  # torna todas as  primeiras letras de cada palavra em maiúsculas: Izaias Correa Filho
 
-
-#  formatação 
+#  formatação
 print(f"Faturamento: R$ {faturamento:.2f}, Custo: R$ {custo:.2f}, Lucro: R$ {lucro:.2f}")
+
+#  formatação : acrescenta  ".(ponto) e 02 zeros após o número" - e com uma vírgual na frente do ponto, fica com separador de milhar (veja em "faturamento")
+print(f"Faturamento: R$ {faturamento:,.2f}, Custo: R$ {custo:.2f}, Lucro: R$ {lucro:.2f}")
+
