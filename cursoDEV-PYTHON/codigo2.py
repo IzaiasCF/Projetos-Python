@@ -10,4 +10,8 @@ margem_lucro = lucro / faturamento
 
 print("Faturamento: R$", faturamento)
 print("Lucro: R$", lucro)
-print(margem_lucro)
+print("Margem de lucro: ", margem_lucro, "%")
+
+restituicao = imposto + 0.1
+
+print("Restituição:", restituicao, "%")
