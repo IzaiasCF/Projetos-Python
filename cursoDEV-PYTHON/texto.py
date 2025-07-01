@@ -33,3 +33,8 @@ print(tamanho)
 # trocar um pedaço do email
 email_trocado = email.replace("gmail.com", "hotmail.com")
 print(email_trocado)
+
+nome = "izaias correa filho"
+print(nome.capitalize())  # torna somente a primeira letra da primeira palavra em maiúscula: Izaias correa filho
+print(nome.title())  # torna todas as  primeiras letras de cada palavra em maiúsculas: Izaias Correa Filho
+
