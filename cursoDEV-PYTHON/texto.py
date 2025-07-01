@@ -4,6 +4,7 @@ email = "email_falso@gmail.com"
 
 lucro = faturamento - custo
 
+#print(f"Faturamento: R$ {faturamento:.2f}, Custo: R$ {custo:.2f}, Lucro: R$ {lucro:.2f}")
 print(f"Faturamento: R$ {faturamento}, Custo: R$ {custo}, Lucro: R$ {lucro}")
 print("E-mail:", email)
 
