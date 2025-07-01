@@ -6,7 +6,7 @@ faturamento = faturamento + novas_vendas
 
 taxa_imposto = 0.1  # número decimal -> float
 
-# texto -> string
+# texto -> string - str
 # verdadeiiro ou falso -> boolean
 
 imposto = taxa_imposto * faturamento
