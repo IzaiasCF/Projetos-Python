@@ -38,3 +38,6 @@ nome = "izaias correa filho"
 print(nome.capitalize())  # torna somente a primeira letra da primeira palavra em maiúscula: Izaias correa filho
 print(nome.title())  # torna todas as  primeiras letras de cada palavra em maiúsculas: Izaias Correa Filho
 
+
+#  formatação 
+print(f"Faturamento: R$ {faturamento:.2f}, Custo: R$ {custo:.2f}, Lucro: R$ {lucro:.2f}")
