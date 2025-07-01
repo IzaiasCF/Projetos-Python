@@ -16,8 +16,8 @@ print(email.find("@"))  # posição do @ dentro de email, começando a contar do
 print(email[11])  # mostra o que está na posição [11]
 print(email[11:])  # mostra o que está na posição [11:] até o final
 
-#print(email[12])  # mostra o que está na posição [12]
-#print(email[12:])  # mostra o que está na posição [12:] até o final
+print(email[12])  # mostra o que está na posição [12]
+print(email[12:])  # mostra o que está na posição [12:] até o final
 
 posicao = email.find("g")
 servidor = email[posicao:]
@@ -25,3 +25,11 @@ print(servidor)
 
 nome_email = email[:posicao]
 print(nome_email)
+
+# tamanho de um texto
+tamanho = len(email)
+print(tamanho)
+
+# trocar um pedaço do email
+email_trocado = email.replace("gmail.com", "hotmail.com")
+print(email_trocado)
