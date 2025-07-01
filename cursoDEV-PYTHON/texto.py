@@ -14,4 +14,8 @@ print(email.upper())   # com upper case
 print(email.find("@"))  # posição do @ dentro de email, começando a contar do zero
 
 print(email[11])  # mostra o que está na posição [11]
+print(email[11:])  # mostra o que está na posição [11] até o final
+
+print(email[12])  # mostra o que está na posição [12]
+print(email[12:])  # mostra o que está na posição [12] até o final
 
