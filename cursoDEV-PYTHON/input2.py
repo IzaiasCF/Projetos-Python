@@ -1,11 +1,13 @@
 # input para faturamento
 
 # definindo o float após o input
-vendas = input("Digite suas vendas do dia: ")
-vendas = float(vendas)
+vendas1 = input("Digite suas vendas do dia: ")
+vendas1 = float(vendas1)
+bonus1 = vendas1 * 0.01
+print(bonus1)
 
 # definindo o float noo input
-vendas = float(input("Digite suas vendas do dia: "))
+vendas2 = float(input("Digite suas vendas do dia: "))
 
-bonus = vendas * 0.01
-print(bonus)
+bonus2 = vendas2 * 0.01
+print(bonus2)
