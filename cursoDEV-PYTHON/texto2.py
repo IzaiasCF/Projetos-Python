@@ -5,7 +5,8 @@ email = "izaiasfalso@gmail.com"
 # descobrir servidor de email.
 posicao = email.find("@")
 print(posicao)
-servidor = email[posicao:]
+servidor = email[posicao:] # com arroba
+servidor = email[posicao:] # sem arroba
 print(servidor)
 
 
