@@ -42,6 +42,10 @@ print(nome.title())  # torna todas as  primeiras letras de cada palavra em maiú
 #  formatação
 print(f"Faturamento: R$ {faturamento:.2f}, Custo: R$ {custo:.2f}, Lucro: R$ {lucro:.2f}")
 
+margem = lucro / faturamento
 #  formatação : acrescenta  ".(ponto) e 02 zeros após o número" - e com uma vírgual na frente do ponto, fica com separador de milhar (veja em "faturamento")
 print(f"Faturamento: R$ {faturamento:,.2f}, Custo: R$ {custo:.2f}, Lucro: R$ {lucro:.2f}")
+print(f"Margem: {margem:.1%}")  # com casa decimal
+print(f"Margem: {margem:.0%}")  # sem casa decimal
+
 
