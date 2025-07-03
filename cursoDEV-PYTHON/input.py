@@ -1,5 +1,4 @@
 # INPUT - entrada de dados digitados pelo usuário
-
 nome = input("Digite seu nome: ")
 email = input("Digite seu email: ")
 
