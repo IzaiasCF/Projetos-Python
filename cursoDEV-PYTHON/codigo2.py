@@ -8,7 +8,6 @@ imposto = faturamento * 0.1
 lucro = faturamento - custo - imposto
 margem_lucro = lucro / faturamento
 
-<<<<<<< HEAD
 # print("Faturamento: R$", faturamento)
 # print("Lucro: R$", lucro)
 # print("Margem de lucro: ", margem_lucro, "%")
@@ -28,8 +27,6 @@ print(round(numero))
 faturamento = 139_018_182
 print(faturamento)
  
-=======
 print("Faturamento: R$", faturamento)
 print("Lucro: R$", lucro)
 print("Margem de lucro: ", margem_lucro, "%")
->>>>>>> a474811093707f45a5383dbe0d304f36cc362e17
