@@ -48,4 +48,5 @@ print(f"Faturamento: R$ {faturamento:,.2f}, Custo: R$ {custo:.2f}, Lucro: R$ {lu
 print(f"Margem: {margem:.1%}")  # com casa decimal
 print(f"Margem: {margem:.0%}")  # sem casa decimal
 
-
+# "\n" -> acescenta um <Enter> para separa por linhas
+print(f"Faturamento: R$ {faturamento:,.2f}\n Custo: R$ {custo:.2f}\n Lucro: R$ {lucro:.2f}")
