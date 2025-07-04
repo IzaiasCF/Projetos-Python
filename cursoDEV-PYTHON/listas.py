@@ -41,3 +41,4 @@ produtos.append("macbook")
 precos.append(10000)
 print(produtos)
 print(precos)
+
