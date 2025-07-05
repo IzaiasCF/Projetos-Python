@@ -20,6 +20,7 @@
 # condição com listas
 produtos = ["iphone", "ipad", "airpod"]
 novo_produto = input("Digite aqui o novo produto: ")
+novo_produto = novo_produto.lower()  # vai inserir na lista um novo produto, independente se digitarem em maiúsculo ou minúsculo
 
 if novo_produto in produtos:
     print("Produto já cadastrado")
@@ -28,3 +29,4 @@ else:
     produtos.append(novo_produto)  # acrescenta o novo produto à lista produtos
 
 print(produtos)
+
