@@ -1,4 +1,10 @@
 # CONDIÇÃO
+# < = maior
+# > = menor
+# >= = maior ou igual
+# <= = menor ou igual
+# == = igual
+# != = diferente
 
 faturamento = 1000
 custo = 1800
