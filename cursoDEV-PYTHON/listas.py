@@ -1,4 +1,4 @@
-# LISTAA
+# LISTAS
 vendas = [100, 50, 130, 80, 120, 200]
 
 # print(vendas[2])  # vai mostrar na tela o ítem 2 da lista, no caso 130 (porque começa a contar do zero)
@@ -30,33 +30,40 @@ produtos = ["iphone", "ipad", "airpod"]
 #print(produto_usuario in produtos)
 precos = ["4000", "2000", "8000",]
 
-# Atualização de lisats
+# Atualização de listas
 
 # edita um ítem
 #print("iphone" in produtos)
-precos[0] = 4500
-precos[0] = precos[0] * 1.1
-novo_preco = precos[0] + 1.1
+# precos[0] = 4500
+# precos[0] = precos[0] * 1.1
+# novo_preco = precos[0] + 1.1
 #print(precos)
 
-produtos.append("macbook")  # APPEND - adiciona um ítem à lista.
+# produtos.append("macbook")  # APPEND - adiciona um ítem à lista.
 
-precos.append(10000)  # 
-precos[0] = novo_preco
-print(novo_preco)
-print(produtos)
+# precos.append(10000)  # 
+# precos[0] = novo_preco
+# print(novo_preco)
+# print(produtos)
+# print(precos)
+
+# # remover um ítem
+# produtos.remove("macbook")
+# precos.pop(-1)
+# print(produtos)
+# print(precos)
+
+# # inserir um valor
+# produtos.insert(1, "airpod")
+# print(produtos)
+
+# # contar valores
+# print(produtos.count("airpod"))
+
+# ORDENAR
+precos.sort()  # ordenar em ordem crescente
 print(precos)
 
-# remover um ítem
-produtos.remove("macbook")
-precos.pop(-1)
-print(produtos)
+precos.sort(reverse=True)  # ordenar em rdem descrencente
 print(precos)
-
-# inserir um valor
-produtos.insert(1, "airpod")
-print(produtos)
-
-# contar valores
-print(produtos.count("airpod"))
 
