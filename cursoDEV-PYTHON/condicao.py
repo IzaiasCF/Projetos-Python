@@ -47,3 +47,4 @@ if (media >= 7):
 else:
     print("Aluno reprovado!")
     print(f"Sua média é:", media)
+
