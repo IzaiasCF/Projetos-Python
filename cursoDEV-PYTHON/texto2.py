@@ -24,3 +24,4 @@ primeira_letra = email[0]
 print(primeira_letra)
 mensagem2 = f"Enviamos um link de confirmação para o email {primeira_letra}****{servidor2}"
 print(mensagem2)
+
