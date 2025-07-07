@@ -20,11 +20,21 @@
 # Sintaxe
 #  print(objetos, argumentos)
 
-nome = input("Digite seu nome: ")
-print("Olá, " + nome + ". Bem vindo ao curso de Python!")
-
+# nome = input("Digite seu nome: ")
+# print("Olá, " + nome + ". Bem vindo ao curso de Python!")
 # Ou: 
-nome = input("Digite seu nome: ")
-msg = "Olá, " + nome + ". Bem vindo ao curso de Python!"
-print(msg)
+# nome = input("Digite seu nome: ")
+# msg = "Olá, " + nome + ". Bem vindo ao curso de Python!"
+# print(msg)
 
+# Quebra de linha
+# print("Imprime a mensagem e muda de linha.")
+# print("Imprime a mensagem e permanece na linha.", end="")
+# print(" Continuo na mesma linha.")
+
+# Oitras formas de concatebar mensagens
+nome = "Maria"
+idade = 30
+#msg_formatada = "O noem dela é {0} e ela tem {1} anos.".format(nome,idade)
+msg_formatada = "O noem dela é {0} e ela tem {1} anos.".format(nome,idade)
+print(msg_formatada)
