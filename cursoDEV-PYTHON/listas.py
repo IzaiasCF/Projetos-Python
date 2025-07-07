@@ -40,7 +40,6 @@ precos = ["4000", "2000", "8000",]
 #print(precos)
 
 # produtos.append("macbook")  # APPEND - adiciona um ítem à lista.
-
 # precos.append(10000)  # 
 # precos[0] = novo_preco
 # print(novo_preco)
