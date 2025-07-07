@@ -1,4 +1,5 @@
 # Bóson Treinamentos
+
 ## condicional simple
 n1 = n2 = 0.0
 media = 0.0
