@@ -50,4 +50,15 @@ msg = f"Olá, meu nome é {nome} e meu peso é {peso} quilos."
 a = 10
 b = 5
 res = f"A soma de {a} com {b} é igual a {a+b}."
-print(res)
+# print(res)
+
+# Arredondamento
+valor = 125.579637
+print(f"O valor é {valor:.2f}")  # Forma de arredondar
+
+# Tabela
+nome = "João"
+idade = 30
+print(f"Nome:\t{nome}\tIdade:\t{idade}")
+print(f"Nome: {nome}\tIdade: {idade}")  # com tabulação
+
