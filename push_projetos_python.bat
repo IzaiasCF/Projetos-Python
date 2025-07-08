@@ -1,6 +1,6 @@
 @echo off
 :: Caminho até sua pasta local do repositório
-cd /d "C:\CAMINHO\PARA\Projetos-Python"
+cd /d "C:\Users\IzaiasCF\Documents\Projetos\Projetos-Python"
 
 :: Mensagem de commit padrão (você pode editar)
 set /p msg="Digite a mensagem do commit: "
