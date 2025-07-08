@@ -4,11 +4,16 @@
 # for letra in palavra:
 #   print(letra)
 
-# funçã0 range
+# função range
 # for numero in range(1,11):
 #   print(numero)
 
 # OU:
-for numero in range(10):
-  print(numero)
+# for numero in range(10):
+#   print(numero)
+
+# outro exemplo:
+nome = input("Digite seu nome: ")
+for x in range(10):
+  print(f"{x+1} {nome}")
   
