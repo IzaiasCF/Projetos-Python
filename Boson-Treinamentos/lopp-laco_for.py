@@ -18,5 +18,14 @@
 #   print(f"{x+1} {nome}")
 
 # outro exemplo:
-for x in range(2,20,2):
-  print(x)
+# for x in range(2,20,2):
+#   print(x)
+
+# tuplas
+pedras = ("Rubi", "Esmelrada", "Quartzo", "Safira", "Diamante", "Turmalina")
+for pedra in pedras:
+  if pedra == "Quartzo":
+    continue
+  print(pedra)
+
+
