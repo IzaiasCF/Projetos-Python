@@ -32,9 +32,16 @@
 # print("Imprime a mensagem e permanece na linha.", end="")
 # print(" Continuo na mesma linha.")
 
-# Oitras formas de concatebar mensagens
+# Outras formas de concatebar mensagens
 nome = "Maria"
 idade = 30
 #msg_formatada = "O noem dela é {0} e ela tem {1} anos.".format(nome,idade)
 msg_formatada = "O noem dela é {0} e ela tem {1} anos.".format(nome,idade)
-print(msg_formatada)
+# print(msg_formatada)
+
+nome = "Izaias"
+peso = 70
+msg = f"Olá, meu nome é {nome} e meu peso é {peso} quilos."
+print(msg)
+# OU:
+print(f"Olá, meu nome é {nome} e meu peso é {peso} quilos.")
