@@ -13,8 +13,10 @@
 #   print(numero)
 
 # outro exemplo:
-nome = input("Digite seu nome: ")
-for x in range(10):
-  print(f"{x+1} {nome}")
+# nome = input("Digite seu nome: ")
+# for x in range(10):
+#   print(f"{x+1} {nome}")
 
-
+# outro exemplo:
+for x in range(2,20,2):
+  print(x)
