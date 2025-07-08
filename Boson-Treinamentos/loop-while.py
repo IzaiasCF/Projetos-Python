@@ -15,6 +15,5 @@ while True:
   if nome == "x" or nome == "X":
     break  # fim do laço
   print(f"Bem-vindo, {nome}")
-
 print("Até logo!")  # mensage de saída do laço
 
