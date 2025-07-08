@@ -42,6 +42,12 @@ msg_formatada = "O noem dela é {0} e ela tem {1} anos.".format(nome,idade)
 nome = "Izaias"
 peso = 70
 msg = f"Olá, meu nome é {nome} e meu peso é {peso} quilos."
-print(msg)
+# print(msg)
 # OU:
-print(f"Olá, meu nome é {nome} e meu peso é {peso} quilos.")
+# print(f"Olá, meu nome é {nome} e meu peso é {peso} quilos.")
+
+# outras formas de imprimir variáveis com textos
+a = 10
+b = 5
+res = f"A soma de {a} com {b} é igual a {a+b}."
+print(res)
