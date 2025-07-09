@@ -21,3 +21,12 @@ print(valores[0])  # print do primeiro valor na lista
 print(valores[6])  # print do sexto valor da 
 print(valores[-1])  # print do último valor
 print(valores[-2])  # print do penúltimo valor
+
+# exemplo 4
+valores[0] = 9  # Alterar valores em alguma posição
+print(valores[0])
+
+# exemplo 5
+print(valores[0:2])  # imprime os valores de 0 a 2, na posição
+print(valores)
+
