@@ -46,3 +46,10 @@ valores[0] = 9
 # exemplo 6
 valores.append(13)  # acrescenta mais um valor à lista, no caso o 13
 print(valores)
+
+valores.append(20)  # acrescentando outro valor (20)
+print(valores)
+valores.pop()  # remove o último valor da lista, no caso, o 20
+valores.pop(3)  # remove o elemento da posição 3 da lista
+print(valores)
+
