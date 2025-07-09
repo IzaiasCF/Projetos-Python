@@ -28,4 +28,3 @@ for pedra in pedras:
     continue
   print(pedra)
 
-
