@@ -34,14 +34,15 @@ valores = n1 + n2
 n1 = [4, 6, 7, 8, 0, 3]
 n2 = [1, 6, 3, 0, 12, 4]
 valores = n1 + n2
-valores[0]= 9
-print(len(valores))  # imprime a quantidade de elementos em ujma lista
-print(sorted(valores))  # versão ordenada da lista
-print(sorted(valores, reverse=True))  # imprime a lista em lrdem inversa
+valores[0] = 9
+# print(len(valores))  # imprime a quantidade de elementos em ujma lista
+# print(sorted(valores))  # versão ordenada da lista
+# print(sorted(valores, reverse=True))  # imprime a lista em lrdem inversa
 
-print(sum(valores))  # soma todos os valores dentro da lista
-print(min(valores))  # mostra valor mínimo
-print(max(valores))  # mostra valor máximo
+# print(sum(valores))  # soma todos os valores dentro da lista
+# print(min(valores))  # mostra valor mínimo
+# print(max(valores))  # mostra valor máximo
 
-
-
+# exemplo 6
+valores.append(13)  # acrescenta mais um valor à lista, no caso o 13
+print(valores)
