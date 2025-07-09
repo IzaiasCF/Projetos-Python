@@ -53,3 +53,7 @@ valores.pop()  # remove o último valor da lista, no caso, o 20
 valores.pop(3)  # remove o elemento da posição 3 da lista
 print(valores)
 
+# exemplo 7
+valores.insert(3,21)  # insere na posição 3, o número 21
+print(valores)
+
