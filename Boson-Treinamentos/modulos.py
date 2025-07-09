@@ -7,6 +7,7 @@
 
 # print(sqrt(81))  # sqrt: raiz quadrada
 
-# outras formas de nomear bibliotecas
+# alias :: outras formas de nomear bibliotecas
 import math as m
 print(m.sqrt(100))
+
