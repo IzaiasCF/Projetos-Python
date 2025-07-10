@@ -38,6 +38,13 @@ t1 = (5, 2, 6, 8, 4, 5, 6, 4, 4, 0, 12, 22, 4, 5)
 # grupo17 = list(halogenios)
 # print(grupo17)
 
-grupo17 = list(halogenios)
-grupo17[0] = "H"
-print(grupo17)
+# grupo17 = list(halogenios)
+# grupo17[0] = "H"
+# print(grupo17)
+
+# exemplo 5
+grupo1 = ["Li", "Na", "K", "Rb", "Cs", "Fr"]
+alcalinos = tuple(grupo1)
+alcalinos[0] = "H"  # não é possível inserir o ítem "H" na tupla alacalinos
+print(alcalinos)
+
