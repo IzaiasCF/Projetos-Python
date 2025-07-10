@@ -47,4 +47,3 @@ grupo1 = ["Li", "Na", "K", "Rb", "Cs", "Fr"]
 alcalinos = tuple(grupo1)
 alcalinos[0] = "H"  # não é possível inserir o ítem "H" na tupla alacalinos
 print(alcalinos)
-
