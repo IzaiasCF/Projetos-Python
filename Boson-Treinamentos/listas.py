@@ -31,10 +31,10 @@ valores = n1 + n2
 # print(valores[:4])  # imprime os 04 primeros valores, na posição
 
 # exemplo 5
-n1 = [4, 6, 7, 8, 0, 3]
-n2 = [1, 6, 3, 0, 12, 4]
-valores = n1 + n2
-valores[0] = 9
+# n1 = [4, 6, 7, 8, 0, 3]
+# n2 = [1, 6, 3, 0, 12, 4]
+# valores = n1 + n2
+# valores[0] = 9
 # print(len(valores))  # imprime a quantidade de elementos em ujma lista
 # print(sorted(valores))  # versão ordenada da lista
 # print(sorted(valores, reverse=True))  # imprime a lista em lrdem inversa
@@ -44,16 +44,25 @@ valores[0] = 9
 # print(max(valores))  # mostra valor máximo
 
 # exemplo 6
-valores.append(13)  # acrescenta mais um valor à lista, no caso o 13
-print(valores)
+# valores.append(13)  # acrescenta mais um valor à lista, no caso o 13
+# print(valores)
 
-valores.append(20)  # acrescentando outro valor (20)
-print(valores)
-valores.pop()  # remove o último valor da lista, no caso, o 20
-valores.pop(3)  # remove o elemento da posição 3 da lista
-print(valores)
+# valores.append(20)  # acrescentando outro valor (20)
+# print(valores)
+# valores.pop()  # remove o último valor da lista, no caso, o 20
+# valores.pop(3)  # remove o elemento da posição 3 da lista
+# print(valores)
 
-# exemplo 7
-valores.insert(3,21)  # insere na posição 3, o número 21
-print(valores)
+# # exemplo 7
+# valores.insert(3,21)  # insere na posição 3, o número 21
+# print(valores)
+
+# # exemplo 8
+# print(12 in valores)  # verifica se um valor (no caso 12) está dentro de listas
+# print(17 in valores)
+
+planetas = ["Mercúrio", "Vênus", "Marte", "Saturno", "Urano", "Netuno"]
+for planeta in planetas:
+  print(planeta)
+
 
