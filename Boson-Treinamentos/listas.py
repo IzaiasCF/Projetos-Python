@@ -66,7 +66,7 @@ planetas = ["Mercúrio", "Vênus", "Marte", "Saturno", "Urano", "Netuno"]
 for planeta in planetas:
   print(planeta)
 
-# execício: elabone um script para pedir 05 bebidas favoritas
+# execício: elabore um script para pedir 05 bebidas favoritas
 bebidas = []  # criação de lista vazia
 for i in range(5):
   print(f"Digite uma bebida favorita: ")
