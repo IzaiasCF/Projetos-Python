@@ -77,5 +77,5 @@ bebidas.sort()  # oredanação
 print(f"\nBebidas escolhidas:")
 for bebida in bebidas:
   print(bebida)
-
+# fim do laço
 print(f"\nSaúde!")
