@@ -61,6 +61,21 @@ valores = n1 + n2
 # print(12 in valores)  # verifica se um valor (no caso 12) está dentro de listas
 # print(17 in valores)
 
+# exemplo 9
 planetas = ["Mercúrio", "Vênus", "Marte", "Saturno", "Urano", "Netuno"]
 for planeta in planetas:
   print(planeta)
+
+# execício: elabone um script para pedir 05 bebidas favoritas
+bebidas = []  # criação de lista vazia
+for i in range(5):
+  print(f"Digite uma bebida favorita: ")
+  bebida = input()
+  bebidas.append(bebida)
+
+bebidas.sort()  # oredanação
+print(f"\nBebidas escolhidas:")
+for bebida in bebidas:
+  print(bebida)
+
+print(f"\nSaúde!")
