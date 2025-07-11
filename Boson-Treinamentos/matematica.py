@@ -29,6 +29,9 @@ y = 100
 # print(logaritmo)
 
 # pi
-print(math.pi)
+# print(math.pi)
 
 # fatorial
+# print(math.factorial(x))
+# print(math.factorial(y))
+
