@@ -50,6 +50,16 @@ t1 = (5, 2, 6, 8, 4, 5, 6, 4, 4, 0, 12, 22, 4, 5)
 # print(alcalinos)
 
 grupo1 = ["Li", "Na", "K", "Rb", "Cs", "Fr"]
-alcalinos = tuple(grupo1)
+alcalinos = tuple(grupo1)  # TUPLE: transformar uma lista em tupla
 # alcalinos[0] = "H"  # não é possível inserir o ítem "H" na tupla alacalinos
 print(alcalinos)
+
+## descobrir que tipo é uma lista
+print(type(alcalinos))
+
+## ordenar na tela o conteúdo de uma tupla
+print(sorted(alcalinos))
+
+## esta opção não é possóvel com uma tupla
+print(alcalinos.sort())
+
