@@ -33,5 +33,6 @@ y = 100
 
 # fatorial
 # print(math.factorial(x))
-# print(math.factorial(y))
 
+# if: infinito
+print(x / math.inf)
