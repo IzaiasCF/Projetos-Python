@@ -35,6 +35,7 @@ t1 = (5, 2, 6, 8, 4, 5, 6, 4, 4, 0, 12, 22, 4, 5)
 # for elemento in elementos:
 #    print(f"Elemento químico: {elemento}")
 
+# criar uma lista a partir de uma tupla
 # grupo17 = list(halogenios)
 # print(grupo17)
 
@@ -50,5 +51,5 @@ t1 = (5, 2, 6, 8, 4, 5, 6, 4, 4, 0, 12, 22, 4, 5)
 
 grupo1 = ["Li", "Na", "K", "Rb", "Cs", "Fr"]
 alcalinos = tuple(grupo1)
-#alcalinos[0] = "H"  # não é possível inserir o ítem "H" na tupla alacalinos
+# alcalinos[0] = "H"  # não é possível inserir o ítem "H" na tupla alacalinos
 print(alcalinos)
