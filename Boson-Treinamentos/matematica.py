@@ -25,6 +25,10 @@ y = 100
 # print(math.floor(raiz_quadrada))  # arrendar para o valor inteiro abaixo
 
 # logaritmo
-logaritmo = math.log10(y)
-print(logaritmo)
+# logaritmo = math.log10(y)
+# print(logaritmo)
 
+# pi
+print(math.pi)
+
+# fatorial
