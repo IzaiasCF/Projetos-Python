@@ -29,7 +29,7 @@ t1 = (5, 2, 6, 8, 4, 5, 6, 4, 4, 0, 12, 22, 4, 5)
 # print(max(t1))  # mostrar maior valor
 
 # OPERAÇÕES NAO DISPONÍVEIS EM TUPLAS: .sort(), .append(), .reverse(), .pop()
-# TUPLAS SÃO IMUTÁVEIS
+### TUPLAS SÃO IMUTÁVEIS ###
 
 # exemplo 4
 # for elemento in elementos:
