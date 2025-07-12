@@ -19,4 +19,16 @@
 # print(dominio)
 
 # exemplo 4
+# produtos = 'cabornato de sódio e óxido de zinco'
+# print('sódio' in produtos)  # verifica de ítem dentro de aspas está em 'produtos'
+# print('magnésio' in produtos)
+# print('magnésio' not in produtos)  # usando operador lógico 'not'
+
+# exemplo 5
+item = 'hipoclorito'
+pos1 = item.find("clor")  # identifica a posição de 'clo' a parit de 0
+print(pos1)
+
+pos2 = item.find('flu')  # retorna '-1' porque 'flu' não está em pos2
+print(pos2)
 
