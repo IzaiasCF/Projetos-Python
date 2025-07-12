@@ -77,3 +77,10 @@ Docstring é uma espécie de documentação que podemos inserir dentro de um mó
 ou classe no Python, entre outros locais.
         Respeita a indentação do texto e é multilinhas.
 """
+# OU:
+texto = """
+Docstring é uma espécie de documentação que podemos inserir dentro de um módulo, função
+ou classe no Python, entre outros locais.
+        Respeita a indentação do texto e é multilinhas.
+"""
+print(texto)
