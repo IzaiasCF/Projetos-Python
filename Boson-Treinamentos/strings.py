@@ -71,6 +71,9 @@
 # print(p.startswith('b'))
 # print(p.endswith('s'))  # verifica se o termo 's' está no FIM do conteúdo
 
-# exemplo 11
-
-
+# exemplo 11 - DocString (documentação dentro do código)
+"""
+Docstring é uma espécie de documentação que podemos inserir dentro de um módulo, função
+ou classe no Python, entre outros locais.
+        Respeita a indentação do texto e é multilinhas.
+"""
