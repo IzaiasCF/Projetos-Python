@@ -46,9 +46,16 @@
 # print(objeto_celeste3.title())  # title: retorna a primeira letra de cada palavra em maiúsculo
 
 # exemplo 7
-suplemento = 'cloreto de magnésio'
-n_suplemnto = suplemento.replace('magnésio', 'zinco')   # '.raplace': substitue um termo por outro
-print(suplemento)
-print(n_suplemnto)
+# suplemento = 'cloreto de magnésio'
+# n_suplemnto = suplemento.replace('magnésio', 'zinco')   # '.raplace': substitue um termo por outro
+# print(suplemento)
+# print(n_suplemnto)
+
+# exemplo 8
+frase = '     Ômega 3 é bom para  saúde    '
+print(frase)
+print(frase.strip())  # elimina espaós em branco no começo e no final da frase
+print(frase.lstrip())  # elimina espaço à esquerda
+print(frase.rstrip())  # elimina espaços à direita
 
 
