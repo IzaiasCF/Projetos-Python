@@ -15,8 +15,14 @@ planeta_anao = {"Plutão", "Ceres", "Eris", "Haumea", "Makemake",}
 #     print(astro.upper())
 
 # exemplo 2
-astros = ["Lua", "Vênus", "Sírius", "Marte", "Lua"]
-print(astros, end=" ")
-astro_set = set(astros)
-print(astro_set)
+# astros = ["Lua", "Vênus", "Sírius", "Marte", "Lua"]
+# print(astros, end=" ")
+# astro_set = set(astros)
+# print(astro_set)
+
+# exemplo 3
+astros1 = {"Lua", "Vênus", "Sírius", "Marte"}
+astros2 = {"Lua", "Vênus", "Sirius", "Marte", "Cometa de Halley"}
+print(astros1 == astros2)
+print(astros1 != astros2)
 
