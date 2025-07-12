@@ -55,4 +55,4 @@ print(elemento.values())
 for i in elemento.values():
     print(i)  # imprime somente os valores das chaves
 
-    
+
