@@ -25,10 +25,17 @@
 # print('magnésio' not in produtos)  # usando operador lógico 'not'
 
 # exemplo 5
-item = 'hipoclorito'
-pos1 = item.find("clor")  # identifica a posição de 'clo' a parit de 0
-print(pos1)
+# item = 'hipoclorito'
+# pos1 = item.find("clor")  # identifica a posição de 'clo' a parit de 0
+# print(pos1)
 
-pos2 = item.find('flu')  # retorna '-1' porque 'flu' não está em pos2
-print(pos2)
+# pos2 = item.find('flu')  # retorna '-1' porque 'flu' não está em pos2
+# print(pos2)
+
+# exemplo 6
+objeto_celeste1 = 'galáxia esPIral M31'
+print(objeto_celeste1.upper())  # upper: retorna tudo em maiúsculo
+
+objeto_celeste2 = 'galáxia ESPIRAL m31'
+print(objeto_celeste2.lower())  # lower: retorna tudo em minúsculo
 
