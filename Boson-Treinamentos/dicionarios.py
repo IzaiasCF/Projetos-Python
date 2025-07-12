@@ -43,16 +43,19 @@ elemento = {
    "período": 1
 }
 
-print(elemento.items())
-for i in elemento.items():
-    print(i)  # imprime como lista
+# print(elemento.items())
+# for i in elemento.items():
+#     print(i)  # imprime como lista
 
-print(elemento.keys())
-for i in elemento.keys():
-    print(i)  # imprime somente as chaves
+# print(elemento.keys())
+# for i in elemento.keys():
+#     print(i)  # imprime somente as chaves
 
-print(elemento.values())
-for i in elemento.values():
-    print(i)  # imprime somente os valores das chaves
+# print(elemento.values())
+# for i in elemento.values():
+#     print(i)  # imprime somente os valores das chaves
+
+for i, j in elemento.items():
+    print(f"{i}: {j}")  # imprime os ítens da lista após ":" (dois pontos)
 
 
