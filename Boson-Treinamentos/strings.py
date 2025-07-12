@@ -46,9 +46,9 @@
 # print(objeto_celeste3.title())  # title: retorna a primeira letra de cada palavra em maiúsculo
 
 # exemplo 7
-# suplemento = 'cloreto de magnésio'
-# n_suplemnto = suplemento.replace('magnésio', 'zinco')   # '.raplace': substitue um termo por outro
-# print(suplemento)
-# print(n_suplemnto)
+suplemento = 'cloreto de magnésio'
+n_suplemnto = suplemento.replace('magnésio', 'zinco')   # '.raplace': substitue um termo por outro
+print(suplemento)
+print(n_suplemnto)
 
 
