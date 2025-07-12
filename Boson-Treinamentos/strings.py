@@ -33,9 +33,22 @@
 # print(pos2)
 
 # exemplo 6
-objeto_celeste1 = 'galáxia esPIral M31'
-print(objeto_celeste1.upper())  # upper: retorna tudo em maiúsculo
+# objeto_celeste1 = 'galáxia esPIral M31'
+# print(objeto_celeste1.upper())  # upper: retorna tudo em maiúsculo
 
-objeto_celeste2 = 'galáxia ESPIRAL m31'
-print(objeto_celeste2.lower())  # lower: retorna tudo em minúsculo
+# objeto_celeste2 = 'galáxia ESPIRAL m31'
+# print(objeto_celeste2.lower())  # lower: retorna tudo em minúsculo
+
+# objeto_celeste3 = 'galáxia ESPIRAL M31'
+# print(objeto_celeste3.capitalize())  # capitalize: retorna apenas a primeira letra da frase em maiúsculo
+
+# objeto_celeste4 = "galáxia ESPIRAL M31"
+# print(objeto_celeste3.title())  # title: retorna a primeira letra de cada palavra em maiúsculo
+
+# exemplo 7
+# suplemento = 'cloreto de magnésio'
+# n_suplemnto = suplemento.replace('magnésio', 'zinco')   # '.raplace': substitue um termo por outro
+# print(suplemento)
+# print(n_suplemnto)
+
 
