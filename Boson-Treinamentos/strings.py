@@ -52,10 +52,25 @@
 # print(n_suplemnto)
 
 # exemplo 8
-frase = '     Ômega 3 é bom para  saúde    '
-print(frase)
-print(frase.strip())  # elimina espaós em branco no começo e no final da frase
-print(frase.lstrip())  # elimina espaço à esquerda
-print(frase.rstrip())  # elimina espaços à direita
+# frase = '     Ômega 3 é bom para  saúde    '
+# print(frase)
+# print(frase.strip())  # elimina espaós em branco no começo e no final da frase
+# print(frase.lstrip())  # elimina espaço à esquerda
+# print(frase.rstrip())  # elimina espaços à direita
+
+# exemplo 9
+# fruta = 'abacate'
+# print(fruta)
+# print(fruta.rjust(20))  # printa a palavra 20 espaços à direita
+# print(fruta.ljust(20))  # printa a palavra 20 espaços à esquerda
+# print(fruta.center(20))  # printa a palavra 20 espaços ao centro
+
+# exemplo 10
+# p = 'Bóson Treinamentos'
+# print(p.startswith('Bó'))  # verifica se o termo 'Bó' está no COMEÇO do conteúdo - retorna verdadeiro ou falso
+# print(p.startswith('b'))
+# print(p.endswith('s'))  # verifica se o termo 's' está no FIM do conteúdo
+
+# exemplo 11
 
 
