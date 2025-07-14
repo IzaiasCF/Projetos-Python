@@ -6,10 +6,12 @@
 #   print("Curso Completo de Python")
 # mensagem()
 
+
 # exemplo 2
 # def soma(a, b):
 #   print(a + b)
 # soma(12,7)
+
 
 # exemplo 3
 # def mult(x, y):
@@ -31,4 +33,5 @@ if __name__ == "__main__":
 
     r = div(a, b)
     print(f"{a} dividido por {b} é igaul a {r}.")
+
 
