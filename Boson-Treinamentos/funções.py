@@ -13,10 +13,9 @@
 
 # exemplo 3
 def mult(x, y):
-  return x + y
+  return x * y
 
 a = 5
 b = 8
-c = mult(a, b)
-
-  
+c = mult(a, b)  
+print(f"O produto de {a} e {b} é {c}.")
