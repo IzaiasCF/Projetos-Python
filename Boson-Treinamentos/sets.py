@@ -36,5 +36,10 @@ astros1.add("Urano")
 astros1.add("Sol")
 print(astros1)
 
-astros1.remove("Io")
+# astros1.remove("Io")
+# astros1.remove("plutão")
+# print(astros1)
+
+astros1.clear()  # deleta todo o conteúdo
 print(astros1)
+
