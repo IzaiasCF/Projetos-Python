@@ -31,3 +31,4 @@ if __name__ == "__main__":
 
     r = div(a, b)
     print(f"{a} dividido por {b} é igaul a {r}.")
+
