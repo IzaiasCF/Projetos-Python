@@ -1,7 +1,13 @@
 # Set - conjuntos em Python
 
 # exemplo 1
-planeta_anao = {"Plutão", "Ceres", "Eris", "Haumea", "Makemake",}
+planeta_anao = {
+    "Plutão",
+    "Ceres",
+    "Eris",
+    "Haumea",
+    "Makemake",
+}
 
 # print(planeta_anao)  # imprime o conteúdo de "planeta_anão"
 # print(len(planeta_anao))  # imprime a quantidade de elementos de "planeta_ana"
@@ -21,8 +27,14 @@ planeta_anao = {"Plutão", "Ceres", "Eris", "Haumea", "Makemake",}
 # print(astro_set)
 
 # exemplo 3
-astros1 = {"Lua", "Vênus", "Sírius", "Marte"}
+astros1 = {"Io", "Lua", "Vênus", "Sírius", "Marte"}
 astros2 = {"Lua", "Vênus", "Sirius", "Marte", "Cometa de Halley"}
 print(astros1 == astros2)
 print(astros1 != astros2)
 
+astros1.add("Urano")
+astros1.add("Sol")
+print(astros1)
+
+astros1.remove("Io")
+print(astros1)
