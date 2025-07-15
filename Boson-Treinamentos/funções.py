@@ -24,13 +24,27 @@
 
 
 # exemplo 4
+# def div(k, j):
+#     return k / j
+
+# if __name__ == "__main__":
+#     a = int(input("Digite um número: "))
+#     b = int(input("Digite outro número: "))
+
+#     r = div(a, b)
+#     print(f"{a} dividido por {b} é igul a {r}.")
+
+
+# exemplo 5
 def div(k, j):
-    return k / j
+    if j != 0:   # tratamento de erro, caso o usuário digite ZERO
+        return k / j
+    else:
+        return "Impossível dividir por zero!"
 
 if __name__ == "__main__":
     a = int(input("Digite um número: "))
     b = int(input("Digite outro número: "))
 
     r = div(a, b)
-    print(f"{a} dividido por {b} é igul a {r}.")
-
+    print(f"{a} dividido por {b} é igual a {r}.")
