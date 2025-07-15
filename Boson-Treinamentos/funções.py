@@ -76,10 +76,25 @@
 
 
 # exemplo 8
-def contar(caractere, num=11):
-    for i in range(1, num):
-        print(caractere)
+# def contar(caractere, num=11):
+#     for i in range(1, num):
+#         print(caractere)
+
+# if __name__ == "__main__":
+#     contar("#")
+
+
+# exemplo 9
+x = 5
+y = 6
+z = 3
+
+def soma_mult(a, b, c = 0):
+  if c == 0:
+    return a * b
+  else:
+    return a + b + c
 
 if __name__ == "__main__":
-    contar("#")
-
+    res = soma_mult(x, y)
+    print(res)
