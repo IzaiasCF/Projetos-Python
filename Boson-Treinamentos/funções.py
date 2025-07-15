@@ -51,15 +51,24 @@
 
 
 # exemplo 6
-def quadrado(val):
-  quadrados = []
-  for x in val:
-    quadrados.append(x ** 2)  # "x" com "**" e "2" está elevado ao quadrado
-  return quadrados
+# def quadrado(val):
+#   quadrados = []
+#   for x in val:
+#     quadrados.append(x ** 2)  # "x" com "**" e "2" está elevado ao quadrado
+#   return quadrados
+
+# if __name__ == "__main__":
+#   valores = [2,5,7,9,12]
+#   resultados = quadrado(valores)
+#   for g in resultados:
+#     print(g)
+
+
+# exemplo 7
+def contar(num=11, caractere="+"):
+  for i in range(1, num):
+    print(caractere)
 
 if __name__ == "__main__":
-  valores = [2,5,7,9,12]
-  resultados = quadrado(valores)
-  for g in resultados:
-    print(g)
+  contar()
 
