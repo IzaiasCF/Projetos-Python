@@ -32,6 +32,6 @@ if __name__ == "__main__":
     b = int(input("Digite outro número: "))
 
     r = div(a, b)
-    print(f"{a} dividido por {b} é igaul a {r}.")
+    print(f"{a} dividido por {b} é igual a {r}.")
 
 
