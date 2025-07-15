@@ -36,4 +36,4 @@ if __name__ == "__main__":
 
     print("Tentando aessar as variáveis diretamente: ")
     print(f"Variável Global: {var_global}")
-    print(f"Variável Local: {var_local}")
+    print(f"Variável Local: {var_local}")   # NÀO aeria imprimido na tela, se a variável 'var_local' estivesse dentro da função
