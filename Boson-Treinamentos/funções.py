@@ -36,15 +36,30 @@
 
 
 # exemplo 5
-def div(k, j):
-    if j != 0:   # tratamento de erro, caso o usuário digite ZERO
-        return k / j
-    else:
-        return "Impossível dividir por zero!"
+# def div(k, j):
+#     if j != 0:   # tratamento de erro, caso o usuário digite ZERO
+#         return k / j
+#     else:
+#         return "Impossível dividir por zero!"
+
+# if __name__ == "__main__":
+#     a = int(input("Digite um número: "))
+#     b = int(input("Digite outro número: "))
+
+#     r = div(a, b)
+#     print(f"{a} dividido por {b} é igual a {r}.")
+
+
+# exemplo 6
+def quadrado(val):
+  quadrados = []
+  for x in val:
+    quadrados.append(x ** 2)  # "x" com "**" e "2" está elevado ao quadrado
+  return quadrados
 
 if __name__ == "__main__":
-    a = int(input("Digite um número: "))
-    b = int(input("Digite outro número: "))
+  valores = [2,5,7,9,12]
+  resultados = quadrado(valores)
+  for g in resultados:
+    print(g)
 
-    r = div(a, b)
-    print(f"{a} dividido por {b} é igual a {r}.")
