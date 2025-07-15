@@ -1,0 +1,5 @@
+{
+  "editor.autoIndentOnPaste": true,
+  "workbench.tree.renderIndentGuides": "always",
+  "editor.autoIndent": "full"
+}

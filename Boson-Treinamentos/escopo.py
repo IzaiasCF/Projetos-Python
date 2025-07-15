@@ -13,7 +13,7 @@
 #     escreve_texto()
 
 # var_global = "Curso Completo de Python"
-# var_local = "Fabio dos Reis"   # variával fora da função
+# var_local = "Fabio dos Reis"   # VARIAVEL DENTRO DA FUNÇÃO
 
 # def escreve_texto():
 #     print(f"Variável Global: {var_global}")
@@ -24,7 +24,7 @@
 #     escreve_texto()
 
 var_global = "Curso Completo de Python"
-var_local = "Fabio dos Reis"  # variával fora da função
+var_local = "Fabio dos Reis"  # VARIÁVEL FORA DA FUNÇÃO
 
 def escreve_texto():
     print(f"Variável Global: {var_global}")
@@ -36,4 +36,4 @@ if __name__ == "__main__":
 
     print("Tentando aessar as variáveis diretamente: ")
     print(f"Variável Global: {var_global}")
-    print(f"Variável Local: {var_local}")   # NÀO aeria imprimido na tela, se a variável 'var_local' estivesse dentro da função
+    print(f"Variável Local: {var_local}")   # NÀO seria imprimido na tela, se a variável 'var_local' estivesse dentro da função
