@@ -65,10 +65,21 @@
 
 
 # exemplo 7
-def contar(num=11, caractere="+"):
-  for i in range(1, num):
-    print(caractere)
+# def contar(num=11, caractere="+"):
+#   for i in range(1, num):
+#     print(caractere)
+
+# if __name__ == "__main__":
+#     contar(caractere="|")
+#     contar(num=5)
+#     contar(6, "@")
+
+
+# exemplo 8
+def contar(caractere, num=11):
+    for i in range(1, num):
+        print(caractere)
 
 if __name__ == "__main__":
-  contar()
+    contar("#")
 
