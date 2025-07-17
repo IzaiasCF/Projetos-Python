@@ -54,7 +54,7 @@
 # def quadrado(val):
 #   quadrados = []
 #   for x in val:
-#     quadrados.append(x ** 2)  # "x" com "**" e "2" está elevado ao quadrado
+#     quadrados.append(x ** 2)  # "x" com "**" está sendo elevado ao quadrado (2)
 #   return quadrados
 
 # if __name__ == "__main__":
@@ -85,18 +85,20 @@
 
 
 # exemplo 9
-x = 5
-y = 6
-z = 3
+# x = 5
+# y = 6
+# z = 3
 
-def soma_mult(a, b, c = 0):
-  if c == 0:
-    return a * b
-  else:
-    return a + b + c
+# def soma_mult(a, b, c = 0):
+#   if c == 0:
+#     return a * b
+#   else:
+#     return a + b + c
 
-if __name__ == "__main__":
-    #res = soma_mult(x, y)  # imprime a multiplicação, porque foram passado 02 argumentos: x e y
-    res = soma_mult(x, y, z)   # imprime a soma, porque foram passado 03 argumentos: x, y e z
-    print(res)
+# if __name__ == "__main__":
+#     #res = soma_mult(x, y)  # imprime a multiplicação, porque foram passado 02 argumentos: x e y
+#     res = soma_mult(x, y, z)   # imprime a soma, porque foram passado 03 argumentos: x, y e z
+#     print(res)
 
+
+# exemplo 10
