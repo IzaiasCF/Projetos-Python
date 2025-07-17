@@ -40,6 +40,8 @@ if __name__ == "__main__":
         r = div(n1, n2)
     except ZeroDivisionError:
         print(f"Não é possivel dividir por ZERO!")
+    except:
+        print(f"Ocorreu um erro desconhecido...")
     else:
         print(f"Resultado: {r}")
     finally:
