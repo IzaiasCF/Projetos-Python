@@ -43,5 +43,5 @@ if __name__ == "__main__":
     else:
         print(f"Resultado: {r}")
     finally:
-        print(f"\nFim do Cálculo")
+        print(f"\n>>> FIM DO CÁLCULO <<<")
 
