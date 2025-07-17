@@ -34,7 +34,7 @@ if __name__ == "__main__":
             break
 
         except ValueError:
-            print(f"Ocorreu um erro ao ler o valor. Tente novamente!")
+            print(f"Ocorreu um erro ao ler o valor. Tente novamente!")  # caso o usuario digite uma letra, terá erro
 
     try:
         r = div(n1, n2)
