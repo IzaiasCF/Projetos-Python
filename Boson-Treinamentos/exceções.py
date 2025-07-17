@@ -42,5 +42,6 @@ if __name__ == "__main__":
         print(f"Não é possivel dividir por ZERO!")
     else:
         print(f"Resultado: {r}")
-
+    finally:
+        print(f"\nFim do Cálculo")
 
