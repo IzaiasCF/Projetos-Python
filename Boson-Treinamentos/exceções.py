@@ -29,15 +29,15 @@ def div(k, j):
 if __name__ == "__main__":
     while True:
         try:
-            n1 = int(input("Digite um número: "))
-            n2 = int(input("Digite outro número: "))
+            k = int(input("Digite um número: "))
+            j = int(input("Digite outro número: "))
             break
 
         except ValueError:
             print(f"Ocorreu um erro ao ler o valor. Tente novamente!")  # caso o usuario digite uma letra, terá erro
 
     try:
-        r = div(n1, n2)
+        r = div(k, j)
     except ZeroDivisionError:
         print(f"Não é possivel dividir por ZERO!")
     else:
