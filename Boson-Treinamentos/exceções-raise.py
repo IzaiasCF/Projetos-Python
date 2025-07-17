@@ -13,4 +13,4 @@ if __name__ == "__main__":
     else:
         print(f"A raiz quadrada de {num} é {sqrt(num)}")
     finally:
-        print(f"\n>>> FIM DO CALCULO <<<")
+        print(f"\n>>> FIM DO CÁLCULO <<<")

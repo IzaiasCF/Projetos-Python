@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Executar Python no Git Bash",
+      "type": "shell",
+      "command": "python",
+      "args": ["${file}"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true, // Foca no terminal após execução
+        "panel": "shared",
+        "clear": false
+      },
+      "options": {
+        "shell": {
+          "executable": "C:\\Program Files\\Git\\bin\\bash.exe", // Caminho do Git Bash
+          "args": ["--login", "-i"] // Modo interativo
+        }
+      }
+    }
+  ]
+}
