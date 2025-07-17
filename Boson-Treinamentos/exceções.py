@@ -23,21 +23,21 @@
 
 
 # EXEMPLO 3: tratando exceções dentro de funções
-def div(k, j):
-    return round(k / j, 2)
+def div(n1, n2):
+    return round(n1 / n2, 2)
 
 if __name__ == "__main__":
     while True:
         try:
-            k = int(input("Digite um número: "))
-            j = int(input("Digite outro número: "))
+            n1 = int(input("Digite um número: "))
+            n2 = int(input("Digite outro número: "))
             break
 
         except ValueError:
             print(f"Ocorreu um erro ao ler o valor. Tente novamente!")  # caso o usuario digite uma letra, terá erro
 
     try:
-        r = div(k, j)
+        r = div(n1, n2)
     except ZeroDivisionError:
         print(f"Não é possivel dividir por ZERO!")
     else:
