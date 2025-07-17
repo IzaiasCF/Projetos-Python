@@ -48,6 +48,7 @@ var_global = "Curso Completo de Python"  # VARIÁVEL FORA DA FUNÇÃO
 var_local = "Fabio dos Reis"  # VARIÁVEL FORA DA FUNÇÃO
 
 def escreve_texto():
+    #var_global = "Banco de dados com SQL"
     global var_global
 
     print(f"Variável Global: {var_global}")
@@ -57,6 +58,6 @@ if __name__ == "__main__":
     print(f"Executando a função escreve_texto")
     escreve_texto()
 
-    print("\nTentando aessar as variáveis diretamente: ")
+    print("\nTentando aessar as variáveis diretamente: ")   # "\n" quebra a linha
     print(f"Variável Global: {var_global}")
     print(f"Variável Local: {var_local}")
