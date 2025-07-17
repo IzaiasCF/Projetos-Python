@@ -1,28 +1,27 @@
 {
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Executar Python no Git Bash",
+      "label": "build",
       "type": "shell",
-      "command": "python",
-      "args": ["${file}"],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "command": "msbuild",
+      "args": [
+        // Ask msbuild to generate full paths for file names.
+        "/property:GenerateFullPaths=true",
+        "/t:build",
+        // Do not generate summary otherwise it leads to duplicate errors in Problems panel
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "group": "build",
       "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "focus": true, // Foca no terminal após execução
-        "panel": "shared",
-        "clear": false
+        // Reveal the output only if unrecognized errors occur.
+        "reveal": "silent",
+        "focus": true // Foca no terminal após execução
       },
-      "options": {
-        "shell": {
-          "executable": "C:\\Program Files\\Git\\bin\\bash.exe", // Caminho do Git Bash
-          "args": ["--login", "-i"] // Modo interativo
-        }
-      }
+      // Use the standard MS compiler pattern to detect errors, warnings and infos
+      "problemMatcher": "$msCompile"
     }
   ]
 }
