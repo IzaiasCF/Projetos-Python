@@ -100,6 +100,5 @@
 #     res = soma_mult(x, y, z)   # imprime a soma, porque foram passado 03 argumentos: x, y e z
 #     print(res)
 
-# PARÂMETROS
 
 # exemplo 10
