@@ -7,8 +7,7 @@ if __name__ == "__main__":
     try:
         num = int(input("Digite um numero positivo: "))
         if num < 0:
-            raise ArithmeticError
-    
+            raise ArithmeticError    
     except ArithmeticError:
         print(f"ERROR: Foi digitado um número negativo.")
     else:
