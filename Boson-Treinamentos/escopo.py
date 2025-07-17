@@ -51,6 +51,8 @@ def escreve_texto():
     #var_global = "Banco de dados com SQL"
     global var_global
 
+    var_global = "Banco de Dados com SQL"
+    var_local = "Fábio dos Reis"
     print(f"Variável Global: {var_global}")
     print(f"Variável Local: {var_local}")
 
