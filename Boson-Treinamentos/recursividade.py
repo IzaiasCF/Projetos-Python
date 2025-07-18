@@ -28,5 +28,9 @@ def fatorial(numero):
 
 if __name__ == "__main__":
     x = int(input("Digite um número inteiro positivo para calcular seu fatorial: "))
-    res = fatorial(x)
-    print(f"O fatorial de {x} é {res}")
+    try:
+        res = fatorial(x)
+    except RecursionError:
+        print(f"O número digitado resulta muito grande ou é negativo.")
+    else:
+        print(f"O fatorial de {x} é {res}")
