@@ -16,5 +16,11 @@
 
 
 # EXEMPLO 3  # converção de temperatura
-f_c = lambda f: (f - 32) * 5/9
-print(f_c(212))
+# f_c = lambda f: (f - 32) * 5/9
+# print(f_c(212))
+
+
+# EXEMPLO 4 - FUNÇÃO MAP()
+num = [1,2,3,4,5,6,7,8]
+dobro = list(map(lambda x: x*2, num))
+print(dobro)
