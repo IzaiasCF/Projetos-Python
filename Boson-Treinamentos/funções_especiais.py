@@ -21,6 +21,12 @@
 
 
 # EXEMPLO 4 - FUNÇÃO MAP()
-num = [1,2,3,4,5,6,7,8]
-dobro = list(map(lambda x: x*2, num))
-print(dobro)
+# num = [1,2,3,4,5,6,7,8]
+# dobro = list(map(lambda x: x*2, num))
+# print(dobro)
+
+
+# EXEMPLO 5
+palavras = ["python", "é", "uma", "linguagem", "de", "programação"]
+maiusculas = list(map(str.upper, palavras))
+print(maiusculas)
