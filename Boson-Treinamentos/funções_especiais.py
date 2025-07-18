@@ -42,8 +42,10 @@
 
 
 # EXEMPLO 7
-numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-num_impar = list(filter(lambda x: x % 2 != 0, numeros))
-print(numeros)
-print(num_impar)
+# numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# num_impar = list(filter(lambda x: x % 2 != 0, numeros))
+# print(numeros)
+# print(num_impar)
 
+
+# EXEMPLO 8 - Função reduce()
