@@ -19,7 +19,7 @@
 # EXEMPLO 2
 from math import sqrt
 
-class NumeroNegativoError(Exception):
+class NumeroNegativoError(Exception):  # criando nossa própria classe de erros
     def __init__(self):
         pass
 
