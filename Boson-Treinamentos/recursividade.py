@@ -34,3 +34,5 @@ if __name__ == "__main__":
         print(f"O número digitado resulta muito grande ou é negativo.")
     else:
         print(f"O fatorial de {x} é {res}")
+    finally:
+        print(">>> FIM DE CÁLCULO!")
