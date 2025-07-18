@@ -49,3 +49,24 @@
 
 
 # EXEMPLO 8 - Função reduce()
+# Sintaxe: reduce(função, sequência, valor_inicial)
+# from functools import reduce
+
+# def mult(x,y):
+#   return x * y
+
+# numeros = [1,2,3,4,5,6]
+
+# total = reduce(mult, numeros)
+# print(total)
+
+
+# EXEMPLO 9 - Soma cumulativa dos quadrados dos valores, usando expressão lambda
+from functools import reduce
+
+numeros = [1,2,3,4]
+# intenção: ((1² + 2²)² + 3²)² + 4²
+
+total = reduce(lambda x, y: x**2 + y**2, numeros)
+print(total)
+
