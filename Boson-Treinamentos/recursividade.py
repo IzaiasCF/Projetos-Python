@@ -12,9 +12,8 @@ def fatorial(numero):
     return 1
   else:
     return numero * fatorial(numero - 1)
-  
+
 if __name__ == "__main__":
   x = int(input("Digite um número inteiro positivo para calcular seu fatorial: "))
   res = fatorial(x)
   print(f"O fatorial de {x} é {res}")
-  
