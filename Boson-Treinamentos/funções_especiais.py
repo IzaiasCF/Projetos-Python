@@ -27,6 +27,15 @@
 
 
 # EXEMPLO 5
-palavras = ["python", "é", "uma", "linguagem", "de", "programação"]
-maiusculas = list(map(str.upper, palavras))
-print(maiusculas)
+# palavras = ["python", "é", "uma", "linguagem", "de", "programação"]
+# maiusculas = list(map(str.upper, palavras))
+# print(maiusculas)
+
+
+# EXEMPLO 6
+def numeros_pares(n):
+  return n % 2 == 0
+
+numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+num_par = list(filter(numeros_pares, numeros))
+print(num_par)
