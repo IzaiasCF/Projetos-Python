@@ -10,6 +10,11 @@
 
 
 # EXEMPLO 2  # verificação se número e par
-par = lambda x : x %2 == 0
-print(par(8))
-print(par(9))
+# par = lambda x : x %2 == 0
+# print(par(8))
+# print(par(9))
+
+
+# EXEMPLO 3  # converção de temperatura
+f_c = lambda f: (f - 32) * 5/9
+print(f_c(212))
