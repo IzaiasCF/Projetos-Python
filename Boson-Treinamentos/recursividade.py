@@ -35,4 +35,4 @@ if __name__ == "__main__":
     else:
         print(f"O fatorial de {x} é {res}")
     finally:
-        print(">>> FIM DE CÁLCULO!")
+        print(">>> FIM DE CÁLCULO! <<<")
