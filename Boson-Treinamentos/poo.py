@@ -7,9 +7,9 @@ class Veiculo:
     print("Sou um veículo e me desloco!")
 
   def __init__(self, fabricante, modelo):
-    self.fabricante = fabricante
-    self.modelo = modelo
-    self.num_registro = None
+    self.__fabricante = fabricante
+    self.__modelo = modelo
+    self.__num_registro = None
     
 # GETTER
 def get_fabr_modelo(self):
