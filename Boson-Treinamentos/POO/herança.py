@@ -22,6 +22,11 @@ class Veiculo:
 
     def get_num_registro(self):
         return self.__num_registro
+    
+class Carro(Veiculo):
+    # Metodo "__init__" sera herdado
+    def movimentar():
+        print(f"Sou umn carro e corro pelas ruas.")    
 
 
 if __name__ == "__main__":
@@ -30,3 +35,8 @@ if __name__ == "__main__":
     meu_veiculo.get_fabr_modelo()
     meu_veiculo.set_num_registro("490321-1")
     print(f"Registro: {meu_veiculo.get_num_registro()}\n")
+
+    meu_carro = Carro("Volkswagem", "Polo")
+    meu_carro.movimentar()
+    meu_carro.get_fabr_modelo()
+
