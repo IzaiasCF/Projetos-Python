@@ -17,9 +17,15 @@
 
 
 # EXEMPLO 4  -  DESCOBRINDO UMA OLISTA DE VOGAIS
-frase = "A lógica e apenas o princípio da sabedoria, e não o seu fim."
-vogais = ["a", "e", "i", "o", "u", "á", "é", "í", "ó", "ú"]
+# frase = "A lógica e apenas o princípio da sabedoria, e não o seu fim."
+# vogais = ["a", "e", "i", "o", "u", "á", "é", "í", "ó", "ú"]
 
-lista_vogais = [v for v in frase if v in vogais]
-print(f"A frase possui {len(lista_vogais)} vogais.")
-print(lista_vogais)
+# lista_vogais = [v for v in frase if v in vogais]
+# print(f"A frase possui {len(lista_vogais)} vogais.")
+# print(lista_vogais)
+
+
+# EXEMPLO 5  -  DISTRIBUTIVA ENTRE VALORES DE 02 LISTAS
+distributiva = [k * m for k in [2,3,5] for m in [10,20,30]]
+print(distributiva)
+
