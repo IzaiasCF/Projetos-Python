@@ -23,7 +23,7 @@ class Veiculo:
     def get_num_registro(self):
         return self.__num_registro
     
-class Carro(Veiculo):
+class Carro(Veiculo):   # Herança da classe "Veiculo"
     # Metodo "__init__" sera herdado
     def movimentar():
         print(f"Sou umn carro e corro pelas ruas.")    
