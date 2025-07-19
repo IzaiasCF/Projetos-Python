@@ -32,20 +32,36 @@ class Carro(Veiculo):   # Herança da classe "Veiculo"
 class Motocicleta(Veiculo):
     def movimentar(self):
         print(f"Corro muito!")
+
+class Aviao(Veiculo):
+    def __init__(self, fabricante, modelo, categoria):
+        self.__cat = categoria
+        super().__init__(fabricante, modelo)
         
+    def get_categoria(self):
+        return self.__cat
+    
+    def movimentar(self):
+        print(f"Eu voo alto!")
+
 
 if __name__ == "__main__":
-    meu_carro = Carro("Volkswagem", "Polo")
-    meu_carro.movimentar()
-    meu_carro.get_fabr_modelo()
+    # meu_carro = Carro("Volkswagem", "Polo")
+    # meu_carro.movimentar()
+    # meu_carro.get_fabr_modelo()
 
-    seu_carro = Carro("Audi", "AS SportBack")
-    seu_carro.movimentar()
-    seu_carro.get_fabr_modelo()
+    # seu_carro = Carro("Audi", "AS SportBack")
+    # seu_carro.movimentar()
+    # seu_carro.get_fabr_modelo()
     
-    # Polimorfismo
-    moto = Motocicleta("Harley Davidson", "Nighster Special")
-    moto.movimentar()
-    moto.get_fabr_modelo()
+    # # Polimorfismo
+    # moto = Motocicleta("Harley Davidson", "Nighster Special")
+    # moto.movimentar()
+    # moto.get_fabr_modelo()
 
+    meu_aviao = Aviao("Boing", "747", "Comercial")
+    meu_aviao.movimentar()
+    meu_aviao.get_fabr_modelo()
+    print(f"Categoria: {meu_aviao.get_categoria()}")
+    meu_aviao.get_categoria()
 
