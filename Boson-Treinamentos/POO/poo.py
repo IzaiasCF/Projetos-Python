@@ -11,20 +11,16 @@ class Veiculo:
         self.__modelo = modelo
         self.__num_registro = None
 
-
 # SETTER
 def set_num_registro(self, registro):
     self.__num_registro = registro
-
 
 # GETTER
 def get_fabr_modelo(self):
     print(f"Modelo: {self.__modelo} - Fabricante: {self.__fabricante}.\n")
 
-
 def get_num_reistro(self):
     return self.__num_registro
-
 
 if __name__ == "__main__":
     meu_veiculo = Veiculo("GM", "Cadillac Escalade")
