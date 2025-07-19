@@ -17,8 +17,8 @@
 
 
 # EXEMPLO 4  -  DESCOBRINDO UMA OLISTA DE VOGAIS
-frase = "A lógica e apenas o princípio da sabedoria, não o seu fim."
-vogais = ["A", "a", "e", "i", "o", "u", "á", "é", "í", "ó", "ú"]
+frase = "A lógica e apenas o princípio da sabedoria, e não o seu fim."
+vogais = ["a", "e", "i", "o", "u", "á", "é", "í", "ó", "ú"]
 
 lista_vogais = [v for v in frase if v in vogais]
 print(f"A frase possui {len(lista_vogais)} vogais.")
