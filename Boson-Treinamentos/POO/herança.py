@@ -26,8 +26,13 @@ class Veiculo:
 class Carro(Veiculo):   # Herança da classe "Veiculo"
     # Metodo "__init__" sera herdado
     def movimentar(self):
-        print(f"Sou umn carro e corro pelas ruas!")    
+        print(f"Sou umn carro e corro pelas ruas!")
 
+# Polimorfismo
+class Motocicleta(Veiculo):
+    def movimentar(self):
+        print(f"Corro muito!")
+        
 
 if __name__ == "__main__":
     meu_carro = Carro("Volkswagem", "Polo")
@@ -38,3 +43,9 @@ if __name__ == "__main__":
     seu_carro.movimentar()
     seu_carro.get_fabr_modelo()
     
+    # Polimorfismo
+    moto = Motocicleta("Harley Davidson", "Nighster Special")
+    moto.movimentar()
+    moto.get_fabr_modelo()
+
+
