@@ -22,25 +22,28 @@ class Veiculo:
 
     def get_num_registro(self):
         return self.__num_registro
-    
-class Carro(Veiculo):   # Herança da classe "Veiculo"
+
+
+class Carro(Veiculo):  # Herança da classe "Veiculo"
     # Metodo "__init__" sera herdado
     def movimentar(self):
         print(f"Sou umn carro e corro pelas ruas!")
+
 
 # Polimorfismo
 class Motocicleta(Veiculo):
     def movimentar(self):
         print(f"Corro muito!")
 
+
 class Aviao(Veiculo):
     def __init__(self, fabricante, modelo, categoria):
         self.__cat = categoria
         super().__init__(fabricante, modelo)
-        
+
     def get_categoria(self):
         return self.__cat
-    
+
     def movimentar(self):
         print(f"Eu voo alto!")
 
@@ -53,7 +56,7 @@ if __name__ == "__main__":
     # seu_carro = Carro("Audi", "AS SportBack")
     # seu_carro.movimentar()
     # seu_carro.get_fabr_modelo()
-    
+
     # # Polimorfismo
     # moto = Motocicleta("Harley Davidson", "Nighster Special")
     # moto.movimentar()
@@ -64,4 +67,3 @@ if __name__ == "__main__":
     meu_aviao.get_fabr_modelo()
     print(f"Categoria: {meu_aviao.get_categoria()}")
     meu_aviao.get_categoria()
-
