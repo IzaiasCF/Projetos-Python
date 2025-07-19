@@ -12,6 +12,9 @@ class Veiculo:
         self.__modelo = modelo
         self.__num_registro = None
 
+# SETTER
+def set_num_registro(self, registro):
+  self.__num_registro = registro
 
 # GETTER
 def get_fabr_modelo(self):
