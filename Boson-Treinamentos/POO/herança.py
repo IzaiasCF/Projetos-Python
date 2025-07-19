@@ -30,13 +30,11 @@ class Carro(Veiculo):   # Herança da classe "Veiculo"
 
 
 if __name__ == "__main__":
-    meu_veiculo = Veiculo("GM", "Cadillac Escalade")
-    meu_veiculo.movimentar()
-    meu_veiculo.get_fabr_modelo()
-    meu_veiculo.set_num_registro("490321-1")
-    print(f"Registro: {meu_veiculo.get_num_registro()}\n")
-
     meu_carro = Carro("Volkswagem", "Polo")
     meu_carro.movimentar()
     meu_carro.get_fabr_modelo()
 
+    seu_carro = Carro("Audi", "AS SportBack")
+    seu_carro.movimentar()
+    seu_carro.get_fabr_modelo()
+    
