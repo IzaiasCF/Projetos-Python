@@ -31,5 +31,5 @@ if __name__ == "__main__":
     meu_veiculo = Veiculo("GM", "Cadillac Escalade")
     meu_veiculo.movimentar()
     meu_veiculo.get_fabr_modelo()
-    meu_veiculo.set_num_registro(490321 - 1)
+    meu_veiculo.set_num_registro(490321-1)
     print(f"Registro: {meu_veiculo.get_num_registro()}")
