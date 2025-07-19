@@ -1,7 +1,6 @@
 # POO: PROGRAMAÇÃO ORIENTADA A OBJETOS  -  É UM PARADIGMA DE PROGRAMAÇÃO
 # Classes e Objetos
 
-
 # EXEMPLO 1
 class Veiculo:
     def movimentar(self):
