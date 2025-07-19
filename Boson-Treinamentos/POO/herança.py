@@ -25,8 +25,8 @@ class Veiculo:
     
 class Carro(Veiculo):   # Herança da classe "Veiculo"
     # Metodo "__init__" sera herdado
-    def movimentar():
-        print(f"Sou umn carro e corro pelas ruas.")    
+    def movimentar(self):
+        print(f"Sou umn carro e corro pelas ruas!")    
 
 
 if __name__ == "__main__":
