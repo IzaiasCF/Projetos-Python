@@ -5,14 +5,14 @@ class Pessoa:
 
     # Métodos para acessar o nome
     def get_nome(self):
-        return self.__nome
+        return self.__nome   # "__": encapsulamento para proteger dados sensíveis
 
     def set_nome(self, novo_nome):
         self.__nome = novo_nome
 
     # Métodos para acessar o CPF (somente leitura)
     def get_cpf(self):
-        return self.__cpf
+        return self.__cpf  # "__": encapsulamento para proteger dados sensíveis
 
 # Criando uma pessoa
 p = Pessoa("João", "123.456.789-00")
