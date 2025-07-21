@@ -4,7 +4,7 @@
 # EXEMPLO 1
 class Veiculo:
     def __init__(self, fabricante, modelo):
-        self.__fabricante = fabricante
+        self.__fabricante = fabricante  # underscore duplo, encapsula a classe
         self.__modelo = modelo
         self.__num_registro = None
 
