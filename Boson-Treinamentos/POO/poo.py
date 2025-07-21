@@ -5,8 +5,8 @@
 class Veiculo:
     def __init__(self, fabricante, modelo):
         self.__fabricante = fabricante  # underscore duplo, encapsula a classe
-        self.__modelo = modelo
-        self.__num_registro = None
+        self.__modelo = modelo  # underscore duplo, encapsula a classe
+        self.__num_registro = None  # underscore duplo, encapsula a classe
 
     def movimentar(self):
         print("Sou um veículo e me desloco!")
