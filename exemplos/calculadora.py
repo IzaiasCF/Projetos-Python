@@ -25,11 +25,14 @@ class Calculadora:
 
         for (texto, linha, coluna) in botoes:
             if texto == "=":
-                tk.Button(self.root, text=texto, padx=20, pady=20, font=("Arial", 14), command=self.calcular).grid(row=linha, column=coluna)
+                tk.Button(self.root, text=texto, padx=20, pady=20, font=("Arial", 14), 
+                          command=self.calcular).grid(row=linha, column=coluna)
             elif texto == "C":
-                tk.Button(self.root, text=texto, padx=115, pady=20, font=("Arial", 14), command=self.limpar).grid(row=linha, column=coluna, columnspan=4)
+                tk.Button(self.root, text=texto, padx=115, pady=20, font=("Arial", 14), 
+                          command=self.limpar).grid(row=linha, column=coluna, columnspan=4)
             else:
-                tk.Button(self.root, text=texto, padx=20, pady=20, font=("Arial", 14), command=lambda t=texto: self.adicionar_texto(t)).grid(row=linha, column=coluna)
+                tk.Button(self.root, text=texto, padx=20, pady=20, font=("Arial", 14), 
+                          command=lambda t=texto: self.adicionar_texto(t)).grid(row=linha, column=coluna)
 
     def adicionar_texto(self, texto):
         self.entrada_texto.set(self.entrada_texto.get() + texto)
