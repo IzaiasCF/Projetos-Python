@@ -15,7 +15,7 @@ class Pessoa:
         return self.__cpf  # "__": encapsulamento para proteger dados sensíveis
 
 # Criando uma pessoa
-p = Pessoa("João", "123.456.789-00")
+p = Pessoa("Izaias Correa Filho", "090.588.448-54")
 
 # Acessando os dados de forma segura
 print("Nome:", p.get_nome())
