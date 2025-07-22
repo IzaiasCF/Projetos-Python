@@ -73,7 +73,7 @@ for i in range(5):
   bebida = input()
   bebidas.append(bebida)
 
-bebidas.sort()  # oredanação
+bebidas.sort()  # ordanação
 print(f"\nBebidas escolhidas:")
 for bebida in bebidas:
   print(bebida)
