@@ -15,7 +15,7 @@ Como usar:
 import math
 import cmath
 from datetime import datetime
-from typing import Tuple
+from typing import Tuple, Union
 
 import streamlit as st
 import numpy as np
@@ -34,7 +34,7 @@ st.caption("Crie, calcule e explore diversos tipos de cálculos em um único lug
 # ---------- Funções utilitárias ---------- #
 
 
-def basic_calc(n1: float, n2: float, op: str):
+def basic_calc(n1: float, n2: float, op: str) -> Union[float, str]:
     if op == "+":
         return n1 + n2
     elif op == "-":
@@ -47,31 +47,41 @@ def basic_calc(n1: float, n2: float, op: str):
         return n1 / n2
     elif op == "^":
         return n1**n2
+    else:
+        return "Operação inválida"
 
 
-def scientific_calc(x: float, func: str):
+def scientific_calc(x: float, func: str) -> Union[float, str]:
     try:
         if func == "sin":
             return math.sin(math.radians(x))
-        if func == "cos":
+        elif func == "cos":
             return math.cos(math.radians(x))
-        if func == "tan":
+        elif func == "tan":
             return math.tan(math.radians(x))
-        if func == "log10":
+        elif func == "log10":
+            if x <= 0:
+                return "Erro: log de número não positivo"
             return math.log10(x)
-        if func == "ln":
+        elif func == "ln":
+            if x <= 0:
+                return "Erro: log de número não positivo"
             return math.log(x)
-        if func == "exp":
+        elif func == "exp":
             return math.exp(x)
-        if func == "sqrt":
+        elif func == "sqrt":
+            if x < 0:
+                return "Erro: raiz de número negativo"
             return math.sqrt(x)
-    except ValueError:
-        return "Erro: entrada inválida"
+        else:
+            return "Função inválida"
+    except ValueError as e:
+        return f"Erro: {str(e)}"
 
 
 def calc_bmi(weight_kg: float, height_cm: float) -> Tuple[float, str]:
-    if height_cm == 0:
-        return 0, "Altura inválida"
+    if height_cm <= 0:
+        return 0.0, "Altura inválida"
     bmi_value = weight_kg / ((height_cm / 100) ** 2)
     if bmi_value < 18.5:
         category = "Abaixo do peso"
@@ -81,10 +91,12 @@ def calc_bmi(weight_kg: float, height_cm: float) -> Tuple[float, str]:
         category = "Sobrepeso"
     else:
         category = "Obesidade"
-    return bmi_value, category
+    return round(bmi_value, 2), category
 
 
-def quadratic_solve(a: float, b: float, c: float):
+def quadratic_solve(
+    a: float, b: float, c: float
+) -> Union[str, Tuple[float, complex, complex]]:
     if a == 0:
         return "Não é uma equação quadrática"
     delta = b**2 - 4 * a * c
@@ -93,7 +105,9 @@ def quadratic_solve(a: float, b: float, c: float):
     return delta, root1, root2
 
 
-def loan_payment(principal: float, annual_rate: float, years: int):
+def loan_payment(principal: float, annual_rate: float, years: int) -> float:
+    if principal <= 0 or years <= 0:
+        return 0.0
     monthly_rate = annual_rate / 12 / 100
     n_payments = years * 12
     if monthly_rate == 0:
@@ -103,10 +117,10 @@ def loan_payment(principal: float, annual_rate: float, years: int):
         * (monthly_rate * (1 + monthly_rate) ** n_payments)
         / ((1 + monthly_rate) ** n_payments - 1)
     )
-    return payment
+    return round(payment, 2)
 
 
-def length_convert(value: float, unit_from: str, unit_to: str):
+def length_convert(value: float, unit_from: str, unit_to: str) -> float:
     # Conversões básicas usando metros como referência
     factors = {
         "m": 1,
@@ -118,7 +132,9 @@ def length_convert(value: float, unit_from: str, unit_to: str):
         "yd": 1.09361,
         "mi": 0.000621371,
     }
-    return value / factors[unit_from] * factors[unit_to]
+    if unit_from not in factors or unit_to not in factors:
+        return 0.0
+    return round(value / factors[unit_from] * factors[unit_to], 6)
 
 
 # ---------- Sidebar de navegação ---------- #
@@ -211,7 +227,7 @@ elif module == "Conversor de Comprimento":
         )
     if st.button("Converter"):
         result = length_convert(value, unit_from, unit_to)
-        st.success(f"{value} {unit_from} = {result} {unit_to}")
+        st.success(f"{value} {unit_from} = {result:.6f} {unit_to}")
 
 # ---------- Rodapé ---------- #
 st.markdown("---")
