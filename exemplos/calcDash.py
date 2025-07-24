@@ -221,3 +221,6 @@ if __name__ == "__main__":
     # ---------- Rodapé ---------- #
     st.markdown("---")
     st.write("© 2025 – Desenvolvido com ❤ em Python + Streamlit")
+
+    # Para rodar o programa:
+    # streamlit run c:/Users/IzaiasCF/Documents/Projetos/Projetos-Python/exemplos/calcDash.py
