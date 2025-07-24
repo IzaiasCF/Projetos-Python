@@ -30,6 +30,7 @@ class Carro(Veiculo):  # Herança da classe "Veiculo"
         print(f"Sou umn carro e corro pelas ruas!")
 
 
+# EXEMLO 2
 # Polimorfismo
 class Motocicleta(Veiculo):
     def movimentar(self):
