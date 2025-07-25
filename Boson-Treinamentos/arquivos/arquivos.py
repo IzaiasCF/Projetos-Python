@@ -13,4 +13,3 @@ manipulador = open(
 
 print(f"Método readlines():\n")
 print(manipulador.readlines())  # read: leitura do conteúdo dentro de uma lista
-
