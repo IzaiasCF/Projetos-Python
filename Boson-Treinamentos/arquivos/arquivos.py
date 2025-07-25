@@ -6,4 +6,4 @@ manipulador = open(
     encoding="latin1",
 )
 print(f"Método read():\n")
-print(manipulador.read())
+print(manipulador.read())  # read: leitura
