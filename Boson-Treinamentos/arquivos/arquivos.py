@@ -1,5 +1,7 @@
 # Manipulção de arqivos de texto
 
+
+# EXEMPLO 1
 manipulador = open(
     "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-treinamentos\\arquivos\\arquivo.txt",
     "r",
@@ -13,3 +15,7 @@ manipulador = open(
 
 print(f"Método readlines():\n")
 print(manipulador.readlines())  # read: leitura do conteúdo dentro de uma lista
+
+
+# EXEMPLO 2
+
