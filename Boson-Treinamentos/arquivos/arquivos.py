@@ -1,4 +1,6 @@
 # Manipulção de arqivos de texto
+# Instale a biblioteca para o Python detectar caracteres latinos:
+# pip install chardet
 
 
 # EXEMPLO 1
@@ -24,10 +26,10 @@ try:
         "r",
         encoding="latin1")
     for linha in manipulador:
+        linha = linha.strip()  # remove o último caracter da linha
         print(linha)
 
 except IOError:
     print(f"Não foi possível abrir o arquivo.")
 else:
     manipulador.close()
-
