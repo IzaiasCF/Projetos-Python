@@ -7,13 +7,13 @@ manipulador = open(
     "r",
     encoding="latin1")
 
-# print(f"Método read():\n")
+# print(f"\nMétodo read():\n")
 # print(manipulador.read())  # read: leitura
 
-# print(f"Método readline():\n")
+# print(f"\nMétodo readline():\n")
 # print(manipulador.readline())  # read: leitura em linha
 
-print(f"Método readlines():\n")
+print(f"\nMétodo readlines():\n")
 print(manipulador.readlines())  # read: leitura do conteúdo dentro de uma lista
 
 
