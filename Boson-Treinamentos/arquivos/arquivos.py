@@ -36,7 +36,7 @@
 
 
 # EXEMPLO 3
-texto = str(input(f""))
+texto = str(input(f"Qual o termo que deseja procurar no arquivo? "))
 try:
     manipulador = open(
         "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
@@ -44,7 +44,9 @@ try:
         encoding="latin1",
     )
     for linha in manipulador:
-        linha = linha.strip()  # remove o último caracter da linha
+        linha = linha.rstrip()  # rstrip: remove o último caracter da linha
+        if texto in linha:
+            print(f"O termo foi encontrado.")
         print(linha)
 
 except IOError:
