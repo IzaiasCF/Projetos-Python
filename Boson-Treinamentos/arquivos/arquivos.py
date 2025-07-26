@@ -20,11 +20,29 @@
 
 
 # EXEMPLO 2
+# try:
+#     manipulador = open(
+#         "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
+#         "r",
+#         encoding="latin1")
+#     for linha in manipulador:
+#         linha = linha.strip()  # remove o último caracter da linha
+#         print(linha)
+
+# except IOError:
+#     print(f"Não foi possível abrir o arquivo.")
+# else:
+#     manipulador.close()
+
+
+# EXEMPLO 3
+texto = str(input(f""))
 try:
     manipulador = open(
         "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
         "r",
-        encoding="latin1")
+        encoding="latin1",
+    )
     for linha in manipulador:
         linha = linha.strip()  # remove o último caracter da linha
         print(linha)
