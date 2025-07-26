@@ -47,6 +47,8 @@ try:
         linha = linha.rstrip()  # rstrip: remove o último caracter da linha
         if texto in linha:
             print(f"O termo foi encontrado.")
+        else:
+            print(f"Termo não encontrado!")
         print(linha)
 
 except IOError:
