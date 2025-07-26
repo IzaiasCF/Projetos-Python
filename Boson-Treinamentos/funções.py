@@ -24,15 +24,15 @@
 
 
 # exemplo 4
-# def div(k, j):
-#     return k / j
+def div(k, j):
+    return k / j
 
-# if __name__ == "__main__":
-#     a = int(input("Digite um número: "))
-#     b = int(input("Digite outro número: "))
+if __name__ == "__main__":
+    a = int(input("Digite um número: "))
+    b = int(input("Digite outro número: "))
 
-#     r = div(a, b)
-#     print(f"{a} dividido por {b} é igul a {r}.")
+    r = div(a, b)
+    print(f"{a} dividido por {b} é igul a {r}.")
 
 
 # exemplo 5
