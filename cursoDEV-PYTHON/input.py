@@ -12,7 +12,7 @@ print(servidor2)
 
 # extrair peimero nome de usuário.
 posicao = nome.find(" ")
-primeiro_nome = nome[:posicao]  # dois pontos na frente de "posicao" pega o priemrio nome antes do primeiro espaço e exclui o restante
+primeiro_nome = nome[:posicao]  # dois pontos na frente de "posicao" pega o primeiro nome antes do primeiro espaço e exclui o restante
 print(primeiro_nome)
 
 # contruir mensagem: Usuário Izaias Correa Filho cadastrado com sucessocom e o email.
