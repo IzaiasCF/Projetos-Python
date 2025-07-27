@@ -1,10 +1,12 @@
+"""
 # CONDIÇÃO
-# < = maior
-# > = menor
-# >= = maior ou igual
-# <= = menor ou igual
-# == = igual
-# != = diferente
+< = maior
+> = menor
+>= = maior ou igual
+<= = menor ou igual
+== = igual
+!= = diferente
+"""
 
 # condição
 # faturamento = 1000
