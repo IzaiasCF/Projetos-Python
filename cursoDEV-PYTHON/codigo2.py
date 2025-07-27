@@ -16,9 +16,9 @@ margem_lucro = lucro / faturamento
 #print(10 % 3)
 #print("Restituição:", restituicao, "%")
 
-tempo_em_meses = 160
-tempo_em_anos = int(tempo_em_meses / 12)
-print(tempo_em_anos, "anos e", tempo_em_meses % 12, "meses")
+# tempo_em_meses = 160
+# tempo_em_anos = int(tempo_em_meses / 12)
+# print(tempo_em_anos, "anos e", tempo_em_meses % 12, "meses")
 
 # Arredondar (round)
 numero = 123.37
@@ -29,4 +29,4 @@ print(faturamento)
  
 print("Faturamento: R$", faturamento)
 print("Lucro: R$", lucro)
-print("Margem de lucro: ", margem_lucro, "%")
+print(round("Margem de lucro: ", margem_lucro(.2), "%"))
