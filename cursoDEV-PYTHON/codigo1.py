@@ -10,7 +10,7 @@ taxa_imposto = 0.1  # número decimal -> float
 # verdadeiiro ou falso -> boolean
 
 imposto = taxa_imposto * faturamento
-mensagem = "O faturamento foi de R$"
+mensagem = "O faturamento foi de R$ "
 
 print("Faturamento: R$", faturamento)
 print("Custo: R$", custo)
