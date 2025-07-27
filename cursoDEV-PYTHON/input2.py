@@ -14,4 +14,4 @@
 ## Atenção ao concatenar variáveis
 vendas_dia1 = input("Vendas do dia 1: ")
 vendas_dia2 = input("Vendas do dia 2: ")
-print(f"Total das Vendas: R${float(vendas_dia1) + float(vendas_dia2)}")
+print(f"Total das Vendas: R$ {float(vendas_dia1) + float(vendas_dia2)}")
