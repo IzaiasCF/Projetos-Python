@@ -2,3 +2,4 @@ Bóson Treinamentos
 Como criar um arquivo de texto com Python.
 Python é muito empregado em I.A.
 A Inteligência Artificial veio para ficar!
+Python é usado em ciência de dados extensivamente.

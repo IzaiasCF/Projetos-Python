@@ -35,16 +35,15 @@
 
 
 # EXEMPLO 3
-
+texto = "\nPython é usado em ciência de dados extensivamente."  # com variavel
 try:
     manipulador = open(
         "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
         "a",  # "a": append - acrescentar
         encoding="latin1",
     )
-    manipulador.write("\nPython é muito empregado em I.A.\n")
-    manipulador.write("A Inteligência Artificial veio para ficar!")
-
+    manipulador.write(texto)
+    
 except IOError:
     print(f"Não foi possível abrir o arquivo.")
 else:
