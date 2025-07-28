@@ -24,7 +24,8 @@ try:
         encoding="latin1"
     )
     manipulador.write("Bóson Treinamentos\n")
-    manipulador.write("Como criar um arquivo de texto com Python.")
+    manipulador.write("Como criar um arquivo de texto com Python.\n")
+    manipulador.write("Nada mais a acrescentar!")
 
 except IOError:
     print(f"Não foi possível abrir o arquivo.")
