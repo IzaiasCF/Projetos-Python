@@ -35,18 +35,46 @@
 
 
 # EXEMPLO 3
-texto = "\nPython é usado em ciência de dados extensivamente."  # com variavel
+# texto = "\nPython é usado em ciência de dados extensivamente."  # com variavel
+# try:
+#     manipulador = open(
+#         "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
+#         "a",  # "a": append - acrescentar
+#         encoding="latin1",
+#     )
+#     manipulador.write(texto)
+    
+# except IOError:
+#     print(f"Não foi possível abrir o arquivo.")
+# else:
+#     manipulador.close()
+
+# print(manipulador)
+
+
+# EXEMPLO 4
+frutas = ["Morango\n", "Uva\n", "Caju\n", "Amora\n", "Framboesa\n", "Graviola"]  # lista e  writelines
 try:
     manipulador = open(
-        "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
-        "a",  # "a": append - acrescentar
+        "frutas.dat",
+        "w",  # "a": append - acrescentar
         encoding="latin1",
     )
-    manipulador.write(texto)
-    
+
+    manipulador.writelines(frutas)
+
 except IOError:
     print(f"Não foi possível abrir o arquivo.")
 else:
     manipulador.close()
 
-print(manipulador)
+# Ler o arquivo criado
+try:
+    manipulador = open("frutas.dat", "r",encoding="latin1")
+
+except IOError:
+    print(f"Não foi possível abrir o arquivo.")
+else:
+    manipulador.close()
+
+print(manipulador.read())
