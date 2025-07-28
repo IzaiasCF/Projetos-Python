@@ -43,7 +43,7 @@
 #         encoding="latin1",
 #     )
 #     manipulador.write(texto)
-    
+
 # except IOError:
 #     print(f"Não foi possível abrir o arquivo.")
 # else:
@@ -71,10 +71,9 @@ else:
 # Ler o arquivo criado
 try:
     manipulador = open("frutas.dat", "r",encoding="latin1")
+    print(manipulador.read())
 
 except IOError:
     print(f"Não foi possível abrir o arquivo.")
 else:
     manipulador.close()
-
-print(manipulador.read())
