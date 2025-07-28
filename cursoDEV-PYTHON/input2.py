@@ -6,7 +6,7 @@
 # bonus1 = vendas1 * 0.01
 # print(bonus1)
 
-# definindo o float noo input
+# definindo o float antes do input
 # vendas2 = float(input("Digite suas vendas do dia: "))
 # bonus2 = vendas2 * 0.01
 # print(bonus2)
