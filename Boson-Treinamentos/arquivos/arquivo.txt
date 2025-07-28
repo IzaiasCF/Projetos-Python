@@ -1,3 +1,2 @@
 Bóson Treinamentos
 Como criar um arquivo de texto com Python.
-Nada mais a acrescentar!
