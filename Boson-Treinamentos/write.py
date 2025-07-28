@@ -4,8 +4,11 @@
 try:
     manipulador = open(
         "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
-        "r",
-        encoding="latin1")
+        "w",  # "w": escrita
+        encoding="latin1",
+    )
+    manipulador.write("Bóson Treinamentos\n")
+
 
 except IOError:
     print(f"Não foi possível abrir o arquivo.")
