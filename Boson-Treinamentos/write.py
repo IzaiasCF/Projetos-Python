@@ -8,7 +8,7 @@ try:
         encoding="latin1",
     )
     manipulador.write("Bóson Treinamentos\n")
-
+    manipulador.write("Como criar um arquivo de texto com Python.")
 
 except IOError:
     print(f"Não foi possível abrir o arquivo.")
