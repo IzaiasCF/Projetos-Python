@@ -17,21 +17,21 @@
 
 
 # EXEMPLO 2
-try:
-    manipulador = open(
-        "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
-        "a",  # "a": append - acrescentar
-        encoding="latin1",
-    )
-    manipulador.write("\nPython é muito empregado em I.A.\n")
-    manipulador.write("A Inteligência Artificial veio para ficar!")
+# try:
+#     manipulador = open(
+#         "C:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\arquivos\\arquivo.txt",
+#         "a",  # "a": append - acrescentar
+#         encoding="latin1",
+#     )
+#     manipulador.write("\nPython é muito empregado em I.A.\n")
+#     manipulador.write("A Inteligência Artificial veio para ficar!")
 
-except IOError:
-    print(f"Não foi possível abrir o arquivo.")
-else:
-    manipulador.close()
+# except IOError:
+#     print(f"Não foi possível abrir o arquivo.")
+# else:
+#     manipulador.close()
 
-print(manipulador)
+# print(manipulador)
 
 
 # EXEMPLO 3
