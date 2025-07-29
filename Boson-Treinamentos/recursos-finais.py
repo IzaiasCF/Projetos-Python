@@ -58,11 +58,17 @@
 
 
 
-# EXEMPLO 5 - gerenciamento de contexto
-try:
-    a = open("c:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\frutas.dat", "r", encoding="latin1")
-    print(a.read())
-except IOError:
-    print(f"Não foi possível abrir o arquivo.")
-else:
-    a.close()
+# EXEMPLO 5 - gerenciamento de contexto com 'with'
+# try:
+#     a = open("c:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\frutas.dat", "r", encoding="latin1")
+#     print(a.read())
+# except IOError:
+#     print(f"Não foi possível abrir o arquivo.")
+# else:
+#     a.close()
+
+# esta sequência retorna a mesma coisa, mas com menos código:
+with open("c:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\frutas.dat", "r", encoding="latin1") as a:
+    for linha in a:
+        print(linha, end="")  # (..., end="" ) - não pula linha ao imprimir
+
