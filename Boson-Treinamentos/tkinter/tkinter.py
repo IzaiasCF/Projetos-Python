@@ -2,7 +2,8 @@
 
 import tkinter as tk
 
-janela = tk.Tk()
+# instanciar a janela
+janela = tk.TK()
 janela.title("Primeiro APP")
 janela.geometry("300x100+20+20")
 
