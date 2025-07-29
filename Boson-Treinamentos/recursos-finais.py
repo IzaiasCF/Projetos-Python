@@ -20,9 +20,16 @@
 
 
 # EXEMPLO 3 - generators
-valores = [1,3,5,7,9,11,13,15]
-quadrados = (item**2 for item in valores)
-print(quadrados)
+# valores = [1,3,5,7,9,11,13,15]
+# quadrados = (item**2 for item in valores)
+# print(quadrados)
 
-for valor in quadrados:
-    print(valor)
+# for valor in quadrados:
+#     print(valor)
+
+
+# EXEMPLO 4 - função enumarate()
+bebidas = ["Café", "Chá", "Água", "Suco", "Vinho"]
+for i, item in enumerate(bebidas):
+    print(f"Índice: {i}, Item: {item}")
+
