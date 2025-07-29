@@ -29,7 +29,10 @@
 
 
 # EXEMPLO 4 - função enumarate()
-bebidas = ["Café", "Chá", "Água", "Suco", "Vinho"]
-for i, item in enumerate(bebidas):
-    print(f"Índice: {i}, Item: {item}")
+# bebidas = ["Café", "Chá", "Água", "Suco", "Vinho"]
+# for i, item in enumerate(bebidas):
+#     print(f"Índice: {i}, Item: {item}")
 
+carros = ["Mustang", "Corvett", "Ferrari", "Masseratti", "Lamborghini"]
+for i, item in enumerate(carros):
+    print(f"Índice: {i:} - Item: {item}")
