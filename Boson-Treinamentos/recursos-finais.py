@@ -10,6 +10,7 @@
 # print(f"var1: {var1}, var2: {var2}")
 
 
+
 # EXEMPLO 2 - operador condicional ternário
 
 # var1 = 12
@@ -17,6 +18,7 @@
 
 # menor = var1 if var1 < var2 else var1
 # print(f"Menor valor: {menor}")
+
 
 
 # EXEMPLO 3 - generators
@@ -28,11 +30,39 @@
 #     print(valor)
 
 
+
 # EXEMPLO 4 - função enumarate()
 # bebidas = ["Café", "Chá", "Água", "Suco", "Vinho"]
 # for i, item in enumerate(bebidas):
 #     print(f"Índice: {i}, Item: {item}")
 
-carros = ["Mustang", "Corvett", "Ferrari", "Masseratti", "Lamborghini"]
-for i, item in enumerate(carros):
-    print(f"Índice: {i:} - Item: {item}")
+# carros = ["Mustang", "Corvett", "Ferrari", "Masseratti", "Lamborghini"]
+# for i, item in enumerate(carros):
+#     print(f"Índice: {i} - Item: {item}")
+
+# temperaturas = [-1, 10, 5, -3, 8, 4, -2, -5, 7]
+# total = 0
+
+# for i, t in enumerate(temperaturas):
+#     if t < 0:
+#         total += 1
+
+# print(f"Há {total} temperaturas negativas na amostra.")
+
+# temperaturas = [-1, 10, 5, -3, 8, 4, -2, -5, 7]
+# total = 0
+
+# for i, t in enumerate(temperaturas):
+#     if t < 0:
+#         print(f"A temperatura em {i} e negativa, com {t} graus centigrados.")
+
+
+
+# EXEMPLO 5 - gerenciamento de contexto
+try:
+    a = open("c:\\Users\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\frutas.dat", "r", encoding="latin1")
+    print(a.read())
+except IOError:
+    print(f"Não foi possível abrir o arquivo.")
+else:
+    a.close()
