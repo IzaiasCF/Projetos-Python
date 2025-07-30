@@ -33,8 +33,8 @@ janela_principal = tk.Tk()
 janela_principal.title("Janela principal")
 janela_principal.geometry("600x500")
 
-# configurando evento de clique na janela principal - ### (Buttom-1) botão esquerdo do mouse
-janela_principal.bind("<Buttom-1>", lambda event: abrir_segunda_janela())
+# configurando evento de clique na janela principal - ### (Button-1) botão esquerdo do mouse
+janela_principal.bind("<Button-1>", lambda event: abrir_segunda_janela())
 # inserindo ícones
 janela_principal.iconbitmap(
     "C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\favicon.ico"
