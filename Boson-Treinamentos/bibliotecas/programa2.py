@@ -13,7 +13,7 @@ janela.geometry("500x400+200+100")
 janela.config(bg="lightblue")
 
 # largura máxima da janela
-janela.maxsize(800,600)
+janela.maxsize(800, 600)
 # largura minima da janela
 # janela.minsize(300,200)
 # sem possibilidade de redimensionar
@@ -25,7 +25,9 @@ janela.maxsize(800,600)
 # janela.attributes("-alpha", 0.6)
 
 # inserindo ícones
-# janela.iconbitmap("favicon.ico")
+janela.iconbitmap(
+    "C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\favicon.ico"
+)
 
 
 # acionar a janela
