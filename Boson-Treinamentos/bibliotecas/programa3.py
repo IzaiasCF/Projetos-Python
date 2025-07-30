@@ -35,7 +35,8 @@ janela_principal.geometry("600x500")
 
 # configurando evento de clique na janela principal - ### (Button-1) botão esquerdo do mouse
 janela_principal.bind("<Button-1>", lambda event: abrir_segunda_janela())
-# inserindo ícones
+
+# inserindo ícone
 janela_principal.iconbitmap(
     "C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\favicon.ico"
 )

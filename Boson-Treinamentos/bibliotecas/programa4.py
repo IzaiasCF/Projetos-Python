@@ -7,7 +7,7 @@ janela = tk.Tk()
 janela.geometry("300x200")
 janela.title("Uso de Labels")
 
-# inserindo ícones
+# inserindo ícone
 janela.iconbitmap(
     "C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\favicon.ico"
 )
