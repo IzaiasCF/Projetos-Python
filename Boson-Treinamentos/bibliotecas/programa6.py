@@ -3,6 +3,7 @@
 import tkinter as tk
 from tkinter import ttk, PhotoImage
 
+
 # imagem centralizada
 def centralizar_imagem(event):
     largura_janela = janela.winfo.width()
@@ -15,5 +16,25 @@ def centralizar_imagem(event):
 
     lbl_imagem.place(x=posicao_x, y=posicao_y)
 
-    
 
+# criar janela
+janela = tk.Tk()
+janela.title("Exibir janela")
+janela.geometry("400x250")
+
+# carregar imagem
+imagem = PhotoImage(
+    file="C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\favicon.ico"
+)
+
+# criar e exibir a imagem
+lbl_imagem = ttk.label(janela, image=imagem)
+
+# centralizar a imagem ao redimisionar a janela
+janela.bind("<Configure>", centralizar_imagem)
+
+# inserir o label na janela
+lbl_imagem.pack(pady=20)
+
+# loop principal
+janela.loop()
