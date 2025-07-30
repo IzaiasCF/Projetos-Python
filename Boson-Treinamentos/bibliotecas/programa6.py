@@ -37,4 +37,4 @@ janela.bind("<Configure>", centralizar_imagem)
 lbl_imagem.pack(pady=20)
 
 # loop principal
-janela.loop()
+janela.mainloop()
