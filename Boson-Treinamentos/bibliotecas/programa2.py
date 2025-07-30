@@ -29,6 +29,5 @@ janela.iconbitmap(
     "C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\favicon.ico"
 )
 
-
 # acionar a janela
 janela.mainloop()
