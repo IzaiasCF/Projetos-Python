@@ -23,10 +23,21 @@ def abrir_segunda_janela():
     # definindo a geometria da janela 2
     segunda_janela.geometry(f"{largura_janela}x{altura_janela}+{x}+{y}")
 
+    # inserindo ícones
+    segunda_janela.iconbitmap(
+    "C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\favicon.ico"
+    )
+
 # criando janela principal
 janela_principal = tk.Tk()
 janela_principal.title("Janela principal")
 janela_principal.geometry("600x500")
 
+# configurando evento de clique na janela principal
 janela_principal.bind("<Buttom-1>", lambda event: abrir_segunda_janela())  ### (Buttom-1) botão esquerdo do mouse
+# inserindo ícones
+janela_principal.iconbitmap(
+    "C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\favicon.ico"
+)
 
+janela_principal.mainloop()
