@@ -30,7 +30,7 @@ imagem = PhotoImage(
 # criar e exibir a imagem
 lbl_imagem = ttk.Label(janela, image=imagem)
 
-# centralizar a imagem ao redimisionar a janela
+# centralizar a imagem ao redimensionar a janela
 janela.bind("<Configure>", centralizar_imagem)
 
 # inserir o label na janela
