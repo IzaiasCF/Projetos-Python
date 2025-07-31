@@ -13,7 +13,7 @@ janela.iconbitmap(
 )
 
 # criando o label
-label = tk.Label(janela, text="Aula de labels")
+label = tk.Label(janela, text="Aula de Labels")
 
 # empacotar o label na jenala
 label.pack()
