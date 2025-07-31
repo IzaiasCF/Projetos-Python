@@ -34,7 +34,19 @@ lbl_imagem = ttk.Label(janela, image=imagem)
 janela.bind("<Configure>", centralizar_imagem)
 
 # inserir o label na janela
-lbl_imagem.pack(pady=20)
+lbl_imagem.pack()
+
+# adicionando um label comum
+lbl_programa6 = ttk.Label(
+    janela,
+    text = "Bóson-Treinamentos",
+    foreground="purple",
+    background="lightgreen",
+    anchor="center",
+    borderwidth=3,
+    relief="groove"
+)
+lbl_programa6.pack(ipadx=10,ipady=20)
 
 # loop principal
 janela.mainloop()
