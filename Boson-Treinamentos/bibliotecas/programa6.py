@@ -20,7 +20,7 @@ def centralizar_imagem(event):
 # criar janela
 janela = tk.Tk()
 janela.title("Exibir janela")
-janela.geometry("650x600")
+janela.geometry("300x300")
 
 # carregar imagem
 imagem = PhotoImage(
