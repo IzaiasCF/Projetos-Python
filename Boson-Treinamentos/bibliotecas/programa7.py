@@ -12,6 +12,7 @@ def mostrar_date():
 janela = tk.Tk()
 janela.title("Mostrar a Data")
 janela.geometry("300x200")
+#janela.configure(bg="#add8e6")  # azul-claro - cor de fundo da janela
 
 # variável para armazenar o texto do label
 texto_data = tk.StringVar()
