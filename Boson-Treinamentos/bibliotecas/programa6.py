@@ -27,7 +27,7 @@ imagem = PhotoImage(
     file="C:\\Users\\\IzaiasCF\\Documents\\Projetos\\Projetos-Python\\Boson-Treinamentos\\bibliotecas\\free.png"
 )
 
-# criar e exibir a imagem
+# criar label e exibir a imagem
 lbl_imagem = ttk.Label(janela, image=imagem)
 
 # centralizar a imagem ao redimensionar a janela
