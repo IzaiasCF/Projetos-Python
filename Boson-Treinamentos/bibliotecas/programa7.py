@@ -27,3 +27,5 @@ botao_data.pack(pady=10)
 
 # exibir janela
 janela.mainloop()
+
+# ------------------------------- Fim do script ------------------------------ #
