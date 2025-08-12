@@ -1,5 +1,4 @@
-# botões com tkinter
-# widget button
+# botões com tkinter - widget button
 
 import tkinter as tk
 from datetime import date
