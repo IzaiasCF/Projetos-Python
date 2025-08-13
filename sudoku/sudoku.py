@@ -8,6 +8,7 @@ import copy
 
 SAVE_FILE = "sudoku_save.json"
 
+
 class Sudoku:
     def __init__(self):
         self.window = tk.Tk()
@@ -35,14 +36,27 @@ class Sudoku:
     def create_widgets(self):
         settings_frame = tk.LabelFrame(self.window, text="Configurações")
         settings_frame.pack(pady=5)
-        tk.Checkbutton(settings_frame, text="Mostrar Cronômetro", variable=self.show_timer).pack(anchor='w')
-        tk.Checkbutton(settings_frame, text="Usar Pontuação", variable=self.show_score).pack(anchor='w')
-        tk.Checkbutton(settings_frame, text="Salvar Progresso", variable=self.save_enabled).pack(anchor='w')
+        tk.Checkbutton(
+            settings_frame, text="Mostrar Cronômetro", variable=self.show_timer
+        ).pack(anchor="w")
+        tk.Checkbutton(
+            settings_frame, text="Usar Pontuação", variable=self.show_score
+        ).pack(anchor="w")
+        tk.Checkbutton(
+            settings_frame, text="Salvar Progresso", variable=self.save_enabled
+        ).pack(anchor="w")
 
         self.difficulty_label = tk.Label(self.window, text="Dificuldade:")
         self.difficulty_label.pack()
         self.difficulty_var = tk.StringVar(value=self.difficulty)
-        self.difficulty_option = tk.OptionMenu(self.window, self.difficulty_var, "fácil", "médio", "difícil", command=self.change_difficulty)
+        self.difficulty_option = tk.OptionMenu(
+            self.window,
+            self.difficulty_var,
+            "fácil",
+            "médio",
+            "difícil",
+            command=self.change_difficulty,
+        )
         self.difficulty_option.pack()
 
         self.status_frame = tk.Frame(self.window)
@@ -54,15 +68,25 @@ class Sudoku:
 
         control_frame = tk.Frame(self.window)
         control_frame.pack(pady=5)
-        tk.Button(control_frame, text="Iniciar Jogo", command=self.start_game).grid(row=0, column=0, padx=5)
-        tk.Button(control_frame, text="Desfazer", command=self.undo).grid(row=0, column=1, padx=5)
-        tk.Button(control_frame, text="Refazer", command=self.redo).grid(row=0, column=2, padx=5)
-        tk.Button(control_frame, text="Verificar", command=self.check_solution).grid(row=0, column=3, padx=5)
+        tk.Button(control_frame, text="Iniciar Jogo", command=self.start_game).grid(
+            row=0, column=0, padx=5
+        )
+        tk.Button(control_frame, text="Desfazer", command=self.undo).grid(
+            row=0, column=1, padx=5
+        )
+        tk.Button(control_frame, text="Refazer", command=self.redo).grid(
+            row=0, column=2, padx=5
+        )
+        tk.Button(control_frame, text="Verificar", command=self.check_solution).grid(
+            row=0, column=3, padx=5
+        )
 
         self.board_frame = tk.Frame(self.window)
         self.board_frame.pack()
 
-        self.stats_label = tk.Label(self.window, text="", justify='left', font=("Arial", 10))
+        self.stats_label = tk.Label(
+            self.window, text="", justify="left", font=("Arial", 10)
+        )
         self.stats_label.pack(pady=10)
 
     def change_difficulty(self, level):
@@ -80,15 +104,53 @@ class Sudoku:
 
         for row in range(9):
             for col in range(9):
-                entry = tk.Entry(self.board_frame, width=2, font=("Arial", 18), justify="center", bg="white")
+                entry = tk.Entry(
+                    self.board_frame, width=2, font=("Arial", 18), justify="center"
+                )
+
+                # Cor de fundo xadrez por bloco 3x3
+                if (row // 3 + col // 3) % 2 == 0:
+                    bg_color = "#f0f0f0"  # bloco claro
+                else:
+                    bg_color = "#ffffff"  # bloco branco
+                entry.config(bg=bg_color)
+
+                # Espaçamento entre blocos 3x3
+                padx = (2, 2)
+                pady = (2, 2)
+                if col % 3 == 0:
+                    padx = (6, 2)
+                if col == 8:
+                    padx = (2, 6)
+                if row % 3 == 0:
+                    pady = (6, 2)
+                if row == 8:
+                    pady = (2, 6)
+
+                # Bordas mais grossas
+                border_width = 1
+                if col % 3 == 0 or row % 3 == 0:
+                    border_width = 2
+                entry.config(
+                    highlightthickness=border_width, highlightbackground="black"
+                )
+
                 value = self.board[row][col]
                 if value != 0:
                     entry.insert(0, str(value))
-                    entry.config(state='disabled', disabledforeground="black", bg="#e0e0e0")
+                    entry.config(
+                        state="disabled", disabledforeground="black", bg="#e0e0e0"
+                    )
                 else:
-                    entry.bind("<FocusIn>", lambda e, r=row, c=col: self.highlight_related(r, c))
-                    entry.bind("<FocusOut>", lambda e, r=row, c=col: self.validate_input(r, c))
-                entry.grid(row=row, column=col, padx=2, pady=2)
+                    entry.bind(
+                        "<FocusIn>",
+                        lambda e, r=row, c=col: self.highlight_related(r, c),
+                    )
+                    entry.bind(
+                        "<FocusOut>", lambda e, r=row, c=col: self.validate_input(r, c)
+                    )
+
+                entry.grid(row=row, column=col, padx=padx, pady=pady)
                 self.entries[(row, col)] = entry
 
         self.start_time = time.time()
@@ -103,11 +165,19 @@ class Sudoku:
             for c in range(9):
                 entry = self.entries[(r, c)]
                 if r == row or c == col:
-                    entry.config(bg="#ccf2ff" if entry['state'] != 'disabled' else "#e0e0e0")
-                elif (r//3 == row//3) and (c//3 == col//3):
-                    entry.config(bg="#d0ffd0" if entry['state'] != 'disabled' else "#e0e0e0")
+                    entry.config(
+                        bg="#ccf2ff" if entry["state"] != "disabled" else "#e0e0e0"
+                    )
+                elif (r // 3 == row // 3) and (c // 3 == col // 3):
+                    entry.config(
+                        bg="#d0ffd0" if entry["state"] != "disabled" else "#e0e0e0"
+                    )
                 else:
-                    entry.config(bg="white" if entry['state'] != 'disabled' else "#e0e0e0")
+                    # Manter padrão xadrez
+                    if (r // 3 + c // 3) % 2 == 0:
+                        entry.config(bg="#f0f0f0")
+                    else:
+                        entry.config(bg="#ffffff")
 
     def validate_input(self, row, col):
         entry = self.entries[(row, col)]
@@ -241,7 +311,7 @@ class Sudoku:
                         continue
                     attempts -= 1
 
-        full_board = [[0]*9 for _ in range(9)]
+        full_board = [[0] * 9 for _ in range(9)]
         solve_board(full_board)
         board = copy.deepcopy(full_board)
         difficulty_map = {"fácil": 35, "médio": 45, "difícil": 55}
@@ -253,10 +323,11 @@ class Sudoku:
             "board": self.board,
             "difficulty": self.difficulty,
             "time": self.elapsed_time,
-            "score": self.score
+            "score": self.score,
         }
         with open(SAVE_FILE, "w") as f:
             json.dump(data, f)
+
 
 if __name__ == "__main__":
     Sudoku().window.mainloop()
