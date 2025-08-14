@@ -28,4 +28,4 @@ def tarefa():
 # associar função a uma combinação de teclas
 keyboard.add_hotkey("ctrl+alt+a", tarefa)
 # encerrar
-keyboard.wait("esc")
+keyboard.wait("Esc")
