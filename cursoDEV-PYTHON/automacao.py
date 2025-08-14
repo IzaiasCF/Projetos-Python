@@ -11,8 +11,14 @@ def tarefa():
     pyautogui.press("win")
     time.sleep(2)
     pyautogui.write("chrome")
-    pyautogui.press("Enter")
+    pyautogui.press("Enter")  # "Enter" em maiúsculo
     # entrar no Teams
+    time.sleep(2)
+    pyautogui.write("https://teams.microsoft.com/v2/")
+    pyautogui.press("Enter")
+    time.sleep(2)
+    # entrar na reunião
+    pyautogui.press("enter")
 
 
 # associar função a uma combinação de teclas
