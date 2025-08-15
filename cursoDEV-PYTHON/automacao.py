@@ -16,7 +16,7 @@ def tarefa():
     pyautogui.press("Enter")  # "Enter" em maiúsculo
 
     # entrar no Teams
-    time.sleep(2)
+    time.sleep(3)
     pyautogui.write("https://teams.microsoft.com/v2/")
     pyautogui.press("Enter")
     time.sleep(2)
