@@ -7,7 +7,7 @@ import time
 
 # criando função
 def tarefa():
-    print("Rodando Automação")
+    print("Iniciando Automação")
     time.sleep(2)
     # abrir navegador
     pyautogui.press("win")
