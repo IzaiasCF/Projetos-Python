@@ -4,6 +4,7 @@ import pyautogui
 import keyboard
 import time
 
+
 # criando função
 def tarefa():
     print("Iniciando Automação")
@@ -15,10 +16,11 @@ def tarefa():
     pyautogui.press("Enter")  # "Enter" em maiúsculo
 
     # entrar no Teams
-    time.sleep(3)
-    pyautogui.write("https://teams.microsoft.com/v2/")
+    time.sleep(4)
+    # pyautogui.write("https://teams.microsoft.com/v2/")
+    pyautogui.write("https://youtu.be/PXk4tOBZIDc")
     pyautogui.press("Enter")
-    time.sleep(2)
+    time.sleep(4)
 
     # entrar na reunião
     pyautogui.press("Enter")
