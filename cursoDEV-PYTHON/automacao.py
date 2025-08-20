@@ -4,7 +4,6 @@ import pyautogui
 import keyboard
 import time
 
-
 # criando função
 def tarefa():
     print("Iniciando Automação")
