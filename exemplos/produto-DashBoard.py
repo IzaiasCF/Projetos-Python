@@ -75,7 +75,7 @@ tabela_dados = sg.Table(
 
 # A estrutura da janela, organizada em linhas
 layout = [
-    [sg.Text("Dashboard de Controlo de Estoque", font=("Helvetica", 20))],
+    [sg.Text("Dashboard de Controle de Estoque", font=("Helvetica", 20))],
     [tabela_dados],
     [
         sg.Text("Produto:", size=(8, 1)),
