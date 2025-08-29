@@ -35,7 +35,7 @@ if __name__ == "__main__":
     r = div(a, b)
     print(f"{a} dividido por {b} é igul a {r}.")
 
-print(f"Os números digitados foram {a} e {b}.")
+#print(f"Os números digitados foram {a} e {b}.")
 
 # exemplo 5
 # def div(k, j):
