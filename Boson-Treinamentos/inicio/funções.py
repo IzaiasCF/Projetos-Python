@@ -27,6 +27,7 @@
 def div(k, j):
     return k / j
 
+
 if __name__ == "__main__":
     a = int(input("Digite um número: "))
     b = int(input("Digite outro número: "))
@@ -100,6 +101,6 @@ if __name__ == "__main__":
 #     res = soma_mult(x, y, z)   # imprime a soma, porque foram passado 03 argumentos: x, y e z
 #     print(res)
 
-###   PARÂMETROS
+# PARÂMETROS
 
 # exemplo 10
