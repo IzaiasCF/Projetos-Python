@@ -1,3 +1,4 @@
+# - Código criado pelo Gemini
 # - Interface mais elegante e responsiva
 # - Experiência do usuário mais fluida
 # - Prevenção de erros comuns de entrada
