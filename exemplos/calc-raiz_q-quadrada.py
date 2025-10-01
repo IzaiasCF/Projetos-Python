@@ -77,7 +77,6 @@ class Calculadora:
             self.entrada.delete(0, tk.END)
             self.entrada.insert(0, "Erro")
 
-
 root = tk.Tk()
 calc = Calculadora(root)
 root.mainloop()
