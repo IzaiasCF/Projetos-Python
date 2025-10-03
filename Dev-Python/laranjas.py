@@ -9,4 +9,4 @@ if laranjas >= 3:
     print("Misturando...")
     print("✅ Suco pronto!")
 else:
-    print("⚠️ Laranjas insuficientes para fazer o suco!")
+    print("⚠️  Laranjas insuficientes para fazer o suco!")
